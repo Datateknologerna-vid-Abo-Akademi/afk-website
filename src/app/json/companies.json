@@ -1,0 +1,39 @@
+{
+    "success":[
+        {
+            "id": 1,
+            "name": "Zoobers and Scoobers",
+            "description": "Zoobers and Scoobers is a planet wide company that focuses on zoob and scoob development",
+            "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
+            "logo": "/images/zoobers_and_scoobers_logo.png"
+        },
+        {
+            "id": 2,
+            "name": "Woopiers Glass Development",
+            "description": "Woopiers glass development is a company that focuses on glass development for the woopier market",
+            "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
+            "logo": "/images/woopiers_glass_logo.png"
+        },
+        {
+            "id": 3,
+            "name": "Gibblygobbly Engineering",
+            "description": "Gibblygobbly engineering is a company that focuses on gibblygobbly engineering",
+            "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
+            "logo": "/images/gibblygobbly_engineering_logo.png"
+        },
+        {
+            "id": 4,
+            "name": "Placeholder Company",
+            "description": "World leading company in placeholder development",
+            "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
+            "logo": "/images/placeholder_company_logo.png"
+        },
+        {
+            "id": 5,
+            "name": "Placeholder Company 2",
+            "description": "World leading company in placeholder development",
+            "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
+            "logo": "/images/placeholder_company_logo.png"
+        }
+    ]
+}

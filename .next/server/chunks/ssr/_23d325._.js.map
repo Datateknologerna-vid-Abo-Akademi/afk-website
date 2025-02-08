@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/adambeijar/Desktop/afk-website/src/app/page.js"],"sourcesContent":["import Image from \"next/image\";\nimport Header from \"./header\";\n\nconst Home = () => {\n  return (\n    <div className=\"bg-red-600\">\n      <div className=\"bg-white flex items-center\" id=\"header\">\n        <Image src=\"/images/AFK_logo.png\" alt=\"AFK logo\" height={300} width={300}/>\n        <div className=\"ml-10\">Skibidi toilet</div>\n      </div>\n      <div className=\"\" id=\"content\">\n        AFK\n      </div>\n    </div>\n  );\n}\n\nexport default Home;\n"],"names":[],"mappings":";;;;AAAA;;;;;;;;;AAGA,MAAM,OAAO;IACX,qBACE,8OAAC;QAAI,WAAU;;0BACb,8OAAC;gBAAI,WAAU;gBAA6B,IAAG;;kCAC7C,8OAAC,6HAAA,CAAA,UAAK;wBAAC,KAAI;wBAAuB,KAAI;wBAAW,QAAQ;wBAAK,OAAO;;;;;;kCACrE,8OAAC;wBAAI,WAAU;kCAAQ;;;;;;;;;;;;0BAEzB,8OAAC;gBAAI,WAAU;gBAAG,IAAG;0BAAU;;;;;;;;;;;;AAKrC;uCAEe"}},
+    {"offset": {"line": 69, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 80, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
+    {"offset": {"line": 80, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

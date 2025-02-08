@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/adambeijar/Desktop/afk-website/src/app/components/header.js"],"sourcesContent":["import React from \"react\";\nimport Image from \"next/image\";\nimport { useState } from \"react\";\n\nconst Header = () => {\n  return (\n    <div className=\"bg-white flex items-center\" id=\"header\">\n      <Image src=\"/images/AFK_logo.png\" alt=\"AFK logo\" height={300} width={300}/>\n      <div className=\"ml-10\">Skibidi toilet</div>\n    </div>\n  );\n}\n\nexport default Header;"],"names":[],"mappings":";;;;AAAA;AACA;;;;;AAGA,MAAM,SAAS;IACb,qBACE,8OAAC;QAAI,WAAU;QAA6B,IAAG;;0BAC7C,8OAAC,6HAAA,CAAA,UAAK;gBAAC,KAAI;gBAAuB,KAAI;gBAAW,QAAQ;gBAAK,OAAO;;;;;;0BACrE,8OAAC;gBAAI,WAAU;0BAAQ;;;;;;;;;;;;AAG7B;uCAEe"}},
+    {"offset": {"line": 48, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 54, "column": 0}, "map": {"version":3,"sources":["file:///Users/adambeijar/Desktop/afk-website/src/app/page.js"],"sourcesContent":["import Image from \"next/image\";\nimport Header from \"./components/header\";\n\nconst Home = () => {\n  return (\n    <div className=\"bg-red-600\">\n      <Header />\n      <div className=\"\" id=\"content\">\n        AFK\n      </div>\n    </div>\n  );\n}\n\nexport default Home;\n"],"names":[],"mappings":";;;;AAAA;AACA;;;;AAEA,MAAM,OAAO;IACX,qBACE,8OAAC;QAAI,WAAU;;0BACb,8OAAC,kIAAA,CAAA,UAAM;;;;;0BACP,8OAAC;gBAAI,WAAU;gBAAG,IAAG;0BAAU;;;;;;;;;;;;AAKrC;uCAEe"}},
+    {"offset": {"line": 89, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 100, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
+    {"offset": {"line": 100, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
