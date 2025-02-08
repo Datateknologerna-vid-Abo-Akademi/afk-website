@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/adambeijar/Desktop/afk-website/src/app/components/header.js"],"sourcesContent":["\"use client\"\n\nimport React from \"react\";\nimport Image from \"next/image\";\n\nconst Header = () => {\n  return (\n    <div className=\"bg-white flex items-center\" id=\"header\">\n      <Image src=\"/images/AFK_logo.png\" alt=\"AFK logo\" height={300} width={300}/>\n    </div>\n  );\n}\n\nexport default Header;"],"names":[],"mappings":";;;;AAEA;AACA;AAHA;;;;AAKA,MAAM,SAAS;IACb,qBACE,6LAAC;QAAI,WAAU;QAA6B,IAAG;kBAC7C,cAAA,6LAAC,gIAAA,CAAA,UAAK;YAAC,KAAI;YAAuB,KAAI;YAAW,QAAQ;YAAK,OAAO;;;;;;;;;;;AAG3E;KANM;uCAQS"}},
-    {"offset": {"line": 44, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
