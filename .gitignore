@@ -1,5 +1,5 @@
 # -----------------------------
-#  Node / React / Tailwind
+#  Next / Node / React / Tailwind
 # -----------------------------
 
 # Logs
@@ -14,6 +14,9 @@ report.[0-9]*.[0-9]*.[0-9]*.[0-9]*
 
 # Node modules
 node_modules/
+
+# Next.js
+.next/
 
 # Build output (React & Tailwind)
 build/
