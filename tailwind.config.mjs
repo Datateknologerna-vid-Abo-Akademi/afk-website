@@ -7,9 +7,13 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Chakra Petch", "sans-serif"],
+        serif: ["Josefin Sans", "serif"],
+      },
       colors: {
-        primary:"#92C7FF",
-        secondary: "#0389EB"
+        primary: "#92C7FF",
+        secondary: "#189fff"
       },
       inset:{
         "1/5": "20%",
