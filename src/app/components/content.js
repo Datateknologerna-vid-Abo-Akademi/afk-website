@@ -6,9 +6,9 @@ import AFK from "./afk";
 
 const Content = () => {
     return (
-      <div className="bg-primary text-secondary" id="content">
+      <div className="bg-primary text-black" id="content">
         <Welcome />
-        <div className="mx-28">
+        <div className="mx-20 my-10 bg-white rounded-md">
           <AFK />
           <Success />
         </div>

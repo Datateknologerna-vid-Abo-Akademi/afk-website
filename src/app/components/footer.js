@@ -8,12 +8,11 @@ const Footer = () => {
                 <div className="w-1/3 items-center justify-center flex">
                     <Image src="/images/AFK_logo_small.png" alt="AFK logo" height={150} width={150} className="p-1 flex"/>
                 </div>
-                <div className="w-1/3 text-left">
+                <div className="w-1/3 text-center">
                     <br />
                     <p>The AFK organizers can be reached though he following means:</p>
                     <br />
                     <p>Email: afk@abo.fi</p>
-                    <p>Phone: +358 the rest of a number</p>
                     <br />
                     <p>Address: <br /> Åbo Akademi <br /> Agora Vattenborgsvägen 5 <br /> 20500 Åbo</p>
                     </div>
