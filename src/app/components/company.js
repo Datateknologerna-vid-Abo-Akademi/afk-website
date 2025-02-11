@@ -8,7 +8,7 @@ const Company = (props) => {
 
   if (hover) {
     return (
-      <div className={"bg-secondary text-primary rounded-lg p-4 h-56 w-full m-1"} id="company" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+      <div className={"bg-secondary text-primary rounded-lg p-30 h-full w-full m-1"} id="company" onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
         <h1 className="text-2xl">{props.company.name}</h1>
         <span className="ml-2">
           <div className="text-lg mb-3">{props.company.description}</div>

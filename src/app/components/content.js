@@ -8,8 +8,10 @@ const Content = () => {
     return (
       <div className="bg-primary text-secondary" id="content">
         <Welcome />
-        <AFK />
-        <Success />
+        <div className="mx-28">
+          <AFK />
+          <Success />
+        </div>
       </div>
     );
 }

@@ -12,7 +12,7 @@ const Success = () => {
                 <h2 className='text-2xl'>AFK 2024</h2>
                 <p className="text-xl">AFK 2024 was a great success with 12 companies from across the country and over 200 attending students over the day, examples on companies include zoobers and scoobers from planet zoink, woopiers glass development from planet wooker and gibblygobbly engineering from planet wooomper scoomper</p>
             </div>
-            <div className='grid grid-cols-5 gap-3'>
+            <div className='grid grid-cols-3 gap-3'>
                 {successCompanies.map((company) => <Company company={company} key={company.id}/>)}
             </div>
         </div>
