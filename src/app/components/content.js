@@ -3,6 +3,7 @@ import Image from "next/image";
 import Welcome from "./welcome";
 import Success from "./success";
 import AFK from "./afk";
+import Organizers from "./organizers";
 
 const Content = () => {
     return (
@@ -10,6 +11,7 @@ const Content = () => {
         <Welcome />
         <div className="mx-20 my-10 bg-white rounded-md">
           <AFK />
+          <Organizers />
           <Success />
         </div>
       </div>

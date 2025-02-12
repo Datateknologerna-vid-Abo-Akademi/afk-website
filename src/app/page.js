@@ -5,7 +5,7 @@ import Content from "./components/content";
 
 const Home = () => {
   return (
-    <div className="bg-primary font-serif">
+    <div className="bg-primary font-serif" id="root">
       <Header />
       <Content />
       <Footer />
