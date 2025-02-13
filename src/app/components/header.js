@@ -1,20 +1,40 @@
 "use client"
 
 import React from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
+import Button from "./button";
+
 
 const Header = () => {
+const [lastScrollY, setLastScrollY] = useState(0);
+  const [hidden, setHidden] = useState(false);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        setHidden(true);
+      } else {
+        setHidden(false);
+      }
+      setLastScrollY(currentScrollY);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <nav className="bg-primary flex items-center justify-between fixed border-black shadow-md top-0 h-fit w-full z-30 opacity-95" id="header">
-      <div className="ml-5 flex items-center justify-center">
+    <nav className={`bg-primary flex items-center justify-between fixed border-black shadow-md left-0 w-full z-10 transition-transform duration-300 ${hidden ? "-translate-y-full" : "translate-y-0"}`} id="header">
+      <button className="ml-5 flex items-center justify-center" onClick={() => {document.getElementById("root").scrollIntoView({behavior: "smooth"})}}>
         <Image src="/images/AFK_logo_small.png" alt="AFK logo" height={50} width={50} className="p-1"/>
-      </div>
-      <div className="mr-5 flex items-center gap-10 p-4 text-lg">
+      </button>
+      <div className="mr-5 flex items-center gap-5 p-3 text-lg">
         {/*Temporary links/sections, could be changed to different pages with images or companies etc.*/}
-        <a href="#afk" className="text-black hover:text-white">About</a>
-        <a href="#success" className="text-black hover:text-white">AFK in the past</a>
-        <a href="#success" className="text-black hover:text-white">The Organizers</a>
-        <a href="#footer" className="text-black hover:text-white">Contact</a>
+        <Button name="About" id="about"/>
+        <Button name="The Organizers" id="organizers"/>
+        <Button name="AFK in the past" id="success"/>
+        <Button name="Contact" id="footer"/>
       </div>
     </nav>
   );
