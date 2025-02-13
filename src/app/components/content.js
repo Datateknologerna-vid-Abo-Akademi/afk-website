@@ -4,6 +4,7 @@ import Welcome from "./welcome";
 import Success from "./success";
 import About from "./about";
 import Organizers from "./organizers";
+import Form from "./form";
 
 const Content = () => {
     return (
@@ -16,8 +17,11 @@ const Content = () => {
           <div className="pt-10 pb-10">
             <Organizers />
           </div>
-          <div className="pb-10">
+          <div className="pt-10 pb-10">
             <Success />
+          </div>
+          <div className="pb-10">
+            <Form />
           </div>
         </div>
       </div>
