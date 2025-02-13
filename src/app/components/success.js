@@ -4,7 +4,7 @@ import Companies from './companies';
 
 const Success = () => {
     return (
-        <div className="px-10 pb-10" id="success">
+        <div id="success">
             <div className="p-4" id="what-is">
                 <h1 className="text-3xl mb-2">Previous AFK Success stories</h1>
                 <h2 className="text-xl mb-2">AFK 2024</h2>

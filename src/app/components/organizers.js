@@ -4,7 +4,7 @@ import Links from "./links";
 
 const Organizers = () => {
     return (
-        <div className="p-10" id="organizers">
+        <div id="organizers">
             <div className="p-4">
                 <h1 className="mb-4 text-3xl">The Organizers</h1>
                 <div className="mb-6">
@@ -17,7 +17,7 @@ const Organizers = () => {
                     </div>
                     <div className="w-2/3 flex flex-col justify-center">
                         <h2 className="mb-1 text-xl font-bold">Projectgroup</h2>
-                        <p>"Projektgruppen", or "Projectgroup" in English, is the elected committee responsible for organizing AFK. The group is elected by the members of <Links name="Datateknologerna vid Åbo Akademi rf" link="https://datateknologerna.org/"/> and is responsible for all stages of planning as well as promotion of the event. The committee is always led by the Vice Chairperson of the <Links name="Datateknologerna board" link="https://datateknologerna.org/pages/styrelsen/"/>, that being Ida Wiberg this year.</p>
+                        <p>"Projektgruppen", or "Projectgroup" in English, is the elected committee responsible for organizing AFK. The group is elected by the members of Datateknologerna vid Åbo Akademi rf and is responsible for all stages of planning as well as promotion of the event. The committee is always led by the Vice Chairperson of the <Links name="Datateknologerna board" link="https://datateknologerna.org/pages/styrelsen/"/>, that being Ida Wiberg this year.</p>
                     </div>
                 </div>
                 <p className="text-sm pt-2 text-gray-700">Pictured from right to left: Ida Wiberg, Johnny Löfman, Adam Beijar, Anton Näsman, Rasmus Vilen, Valter Lax, Hugo Söderholm</p>

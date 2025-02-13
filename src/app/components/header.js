@@ -31,7 +31,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
       </button>
       <div className="mr-5 flex items-center gap-5 p-3 text-lg">
         {/*Temporary links/sections, could be changed to different pages with images or companies etc.*/}
-        <Button name="About" id="afk"/>
+        <Button name="About" id="about"/>
         <Button name="The Organizers" id="organizers"/>
         <Button name="AFK in the past" id="success"/>
         <Button name="Contact" id="footer"/>
