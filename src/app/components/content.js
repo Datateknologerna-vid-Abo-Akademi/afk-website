@@ -14,7 +14,7 @@ const Content = () => {
           <div className="pt-10">
             <About />
           </div>
-          <div className="pt-10 pb-10">
+          <div className="pt-10">
             <Organizers />
           </div>
           <div className="pt-10 pb-10">

@@ -34,7 +34,7 @@ const [lastScrollY, setLastScrollY] = useState(0);
         <Button name="About" id="about"/>
         <Button name="The Organizers" id="organizers"/>
         <Button name="AFK in the past" id="success"/>
-        <Button name="Contact" id="footer"/>
+        <Button name="Contact" id="contact"/>
       </div>
     </nav>
   );
