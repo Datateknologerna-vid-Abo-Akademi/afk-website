@@ -8,7 +8,7 @@ export const Company = (props) => {
 
 
   return (
-    <div className={"bg-primary rounded-lg p-2 h-56 m-1 flex items-center justify-center"} id="company" onClick={() => props.handleClick(props.company)}>
+    <div className={"bg-primary rounded-lg p-2 h-56 m-1 flex items-center justify-center cursor-pointer"} id="company" onClick={() => props.handleClick(props.company)}>
       <Image src={props.company.logo} alt={props.company.name + " logo"} height={100} width={200} className=""/>
     </div>
   );

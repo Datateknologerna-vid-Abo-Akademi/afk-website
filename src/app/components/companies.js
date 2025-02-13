@@ -51,7 +51,7 @@ const Companies = () => {
                 )}
 
                 {/* List of companies (Hides smoothly but retains space) */}
-                <div className={`relative grid grid-cols-5 gap-2 overflow-y-scroll overflow-x-hidden w-full transition-all duration-300 ease-in-out ${selectedCompany ? "opacity-0 invisible scale-95" : "opacity-100 visible scale-100"}`}>
+                <div className={`relative grid grid-cols-3 gap-2 overflow-y-scroll overflow-x-hidden w-full transition-all duration-300 ease-in-out ${selectedCompany ? "opacity-0 invisible scale-95" : "opacity-100 visible scale-100"}`}>
                     {successCompanies.map((company) => (
                         <Company company={company} key={company.id} handleClick={() => handleClick(company)} />
                     ))}

@@ -13,7 +13,7 @@ const Organizers = () => {
                 </div>
                 <div className="flex flex-row gap-10">
                     <div className="items-center justify-center w-1/3">
-                        <Image src="/images/organizers-ai.png" alt="Organizers" height={1063} width={1600} className="p-1"/>
+                        <Image src="/images/organizers-ai.png" alt="Organizers" height={1063} width={1600} className="p-1 rounded-lg"/>
                     </div>
                     <div className="w-2/3 flex flex-col justify-center">
                         <h2 className="mb-1 text-xl font-bold">Projectgroup</h2>
