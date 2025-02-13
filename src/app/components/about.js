@@ -15,10 +15,10 @@ const About = () => {
                 The day begins with the recruitment fair, and after that, there will be a small cocktail party in the same building. The fair will be held at our student campus, to bring visibility to IT students from both universities.
                 </p>
             </div>
-            <div className="pt-10">
+            <div className="pt-10 hidden md:flex">
                 <ImageTextLeft imagesrc="/images/afk24-crowd.jpg" imagealt="AFK presentation" imageheight={1063} imagewidth={1600} title="What can you expect as a company attending AFK?" text="As a company you can expect to chat and connect with students from all over the country who study information technology at either Åbo Akademi University or Turku University."/>
             </div>
-            <div className="pt-10">
+            <div className="pt-10 hidden md:flex">
                 <ImageTextRight imagesrc="/images/afk24-presentation.jpg" imagealt="AFK presentation" imageheight={1063} imagewidth={1600} title="What can you expect as a student attending AFK?" text="As a student you can expect to chat and connect with companies from all over the country who are looking for new employees. You can also attend presentations and workshops held by the companies."/>
             </div>
         </div>
