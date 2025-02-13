@@ -6,7 +6,9 @@ import Content from "./components/content";
 const Home = () => {
   return (
     <div className="bg-primary font-serif" id="root">
-      <Header />
+      <div className="sm:flex hidden">
+        <Header />
+      </div>
       <Content />
       <Footer />
     </div>
