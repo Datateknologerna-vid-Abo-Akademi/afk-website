@@ -13,7 +13,7 @@ export default {
       },
       colors: {
         primary: "#92C7FF",
-        secondary: "#189fff"
+        secondary: "#4d98e8"
       },
       inset:{
         "1/5": "20%",

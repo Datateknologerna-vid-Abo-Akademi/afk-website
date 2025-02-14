@@ -5,7 +5,8 @@ import WelcomeMobile from "./welcomeMobile";
 import Success from "./success";
 import About from "./about";
 import Organizers from "./organizers";
-import Form from "./form";
+import Contact from "./contact";
+import EventInformation from "./eventInformation";
 
 const Content = () => {
     return (
@@ -23,11 +24,14 @@ const Content = () => {
           <div className="pt-10">
             <Organizers />
           </div>
-          <div className="pt-10 pb-10">
+          <div className="pt-10">
             <Success />
           </div>
-          <div className="pb-10">
-            <Form />
+          <div className="pt-10">
+            <EventInformation />
+          </div>
+          <div className="pt-10 pb-10">
+            <Contact />
           </div>
         </div>
       </div>

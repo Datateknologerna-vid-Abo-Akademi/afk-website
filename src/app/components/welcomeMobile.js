@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const WelcomeMobile = () => {
     return (
-        <div className="bg-primary h-fit relative w-full my-10 animate-appear" id="welcome-text">
+        <div className="bg-primary h-fit relative w-full mb-10 mt-5 animate-appear" id="welcome-text">
             <div className="flex items-center justify-center">
                 <div className="flex items-center justify-center">
                     <Image src="/images/AFK_logo.png" alt="Welcome" width={375} height={375} className="p-5" />

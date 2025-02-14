@@ -8,7 +8,7 @@ const Organizers = () => {
             <h1 className="mb-4 text-3xl">The Organizers</h1>
             <div className="mb-6">
                 <h2 className="mb-1 text-xl font-bold">Datateknologerna</h2>
-                <p><Links name="Datateknologerna vid Åbo Akademi rf (DaTe)" link="https://datateknologerna.org/"/> is an association for students in the Computer Engineering program at the Faculty of Science and Engineering at Åbo Akademi, as well as for students in other technically oriented programs in computing. The association was founded in 1999, specifically on August 24th at 16:32. Members are recognized by their black overalls and stylish white caps.</p>
+                <p><Links name="Datateknologerna vid Åbo Akademi rf (DaTe)" link="https://datateknologerna.org/"/> is the association for students in the Computer Engineering program at the Faculty of Science and Engineering at Åbo Akademi, as well as for students in other technically oriented programs in computing. The association was founded in 1999, specifically on August 24th at 16:32. Members are recognized by their black overalls and stylish white caps.</p>
             </div>
             <div className="flex md:flex-row md:gap-10">
                 <div className="md:flex hidden items-center justify-center w-1/3">

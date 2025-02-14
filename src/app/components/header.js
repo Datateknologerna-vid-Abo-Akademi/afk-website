@@ -29,11 +29,12 @@ const [lastScrollY, setLastScrollY] = useState(0);
       <button className="ml-5 flex items-center justify-center" onClick={() => {document.getElementById("root").scrollIntoView({behavior: "smooth"})}}>
         <Image src="/images/AFK_logo_small.png" alt="AFK logo" height={50} width={50} className="p-1"/>
       </button>
-      <div className="mr-5 flex items-center gap-5 p-3 text-lg">
+      <div className="mr-5 flex items-center gap-3 p-3 text-lg">
         {/*Temporary links/sections, could be changed to different pages with images or companies etc.*/}
         <Button name="About" id="about"/>
         <Button name="The Organizers" id="organizers"/>
         <Button name="AFK in the past" id="success"/>
+        <Button name="Attend AFK25" id="event-info"/>
         <Button name="Contact" id="contact"/>
       </div>
     </nav>
