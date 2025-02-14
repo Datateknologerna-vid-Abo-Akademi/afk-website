@@ -16,7 +16,7 @@ const Content = () => {
         <div className="sm:hidden flex">
           <WelcomeMobile />
         </div>
-        <div className="max-w-5xl mb-10 sm:px-14 px-8 bg-white rounded-md mx-4">
+        <div className="max-w-5xl mb-10 sm:px-14 px-8 bg-white rounded-md mx-4 lg:mx-auto">
           <div className="pt-10">
             <About />
           </div>
