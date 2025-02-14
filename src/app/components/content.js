@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Welcome from "./welcome";
+import WelcomeMobile from "./welcomeMobile";
 import Success from "./success";
 import About from "./about";
 import Organizers from "./organizers";
@@ -12,7 +13,10 @@ const Content = () => {
         <div className="sm:mb-10 sm:flex hidden">
           <Welcome />
         </div>
-        <div className="max-w-5xl mb-10 px-10 bg-white rounded-md mx-auto">
+        <div className="sm:hidden flex">
+          <WelcomeMobile />
+        </div>
+        <div className="max-w-5xl mb-10 sm:px-14 px-8 bg-white rounded-md mx-4">
           <div className="pt-10">
             <About />
           </div>
