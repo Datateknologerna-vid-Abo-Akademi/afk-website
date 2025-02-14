@@ -13,14 +13,27 @@ export default {
       },
       colors: {
         primary: "#92C7FF",
-        secondary: "#189fff"
+        secondary: "#4d98e8"
       },
       inset:{
         "1/5": "20%",
         "2/5": "40%",
         "3/5": "60%",
         "4/5": "80%",
-      }
+      },
+      keyframes: {
+        appear: {
+          "0%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
+       },
+       animation: {
+          appear: "appear 2s ease-in-out",
+       }
     },
   },
   plugins: [],
