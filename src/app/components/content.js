@@ -22,13 +22,13 @@ const Content = () => {
             <About />
           </div>
           <div className="pt-10">
+            <EventInformation />
+          </div>
+          <div className="pt-10">
             <Organizers />
           </div>
           <div className="pt-10">
             <Success />
-          </div>
-          <div className="pt-10">
-            <EventInformation />
           </div>
           <div className="pt-10 pb-10">
             <Contact />
