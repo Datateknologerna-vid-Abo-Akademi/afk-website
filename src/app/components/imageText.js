@@ -20,7 +20,7 @@ export const ImageTextLeft = (props) => {
 
 export const ImageTextRight = (props) => {
   return (
-    <div className="text-justify w-full relative flex justify-end">
+    <div className="w-full relative flex justify-end">
       <Image 
         src={props.imagesrc} 
         alt={props.imagealt} 
