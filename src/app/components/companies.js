@@ -6,7 +6,9 @@ import { useState, useEffect } from "react";
 const Companies = () => {
     const successCompanies = companies.success;
     const [selectedCompany, setSelectedCompany] = useState(null);
-    const [selectedCompanyDelay, setSelectedCompanyDelay] = useState(false);
+    const [selectedCompanyDelay, setSelectedCompanyDelay] = useState(true);
+    const [selectedCompanyHidden, setSelectedCompanyHidden] = useState(true);
+
 
     useEffect(() => {
         console.log(selectedCompany);
@@ -14,44 +16,43 @@ const Companies = () => {
 
     const handleClick = (company) => {
         setSelectedCompany(company);
-        setTimeout(() => {
-            setSelectedCompanyDelay(true);
-        }, 300); // Matches the transition duration
     };
 
     const handleBack = () => {
-        setSelectedCompanyDelay(false);
-        setTimeout(() => {
-            setSelectedCompany(null);
-        }, 300); // Matches the transition duration
+        setSelectedCompany(null);
     };
 
-    const companyFilter = (company) => {
+    useEffect(() => {
         if (selectedCompany) {
-            const isSelected = company.id === selectedCompany.id;
-            return !isSelected;
-        } else{
-            return true;
+            setSelectedCompanyHidden(true);
+        } else {
+            setSelectedCompanyHidden(false);
         }
-    }
+    }, [selectedCompany]);
+
+    useEffect(() => {
+        console.log(selectedCompanyHidden);
+    }, [selectedCompanyHidden]);
+
+
     return (
-        <div className="relative w-full flex flex-col transition-all duration-300 ease-in-out">
+        <div className="relative w-full flex flex-col">
             {/* Maintain height with a wrapping div */}
-            <div className="grid grid-rows-[auto,1fr] max-h-[30rem] w-full transition-all duration-300 ease-in-out">
+            <div className="grid grid-rows-[auto,1fr] max-h-[30rem] w-full">
                 
                 {/* Selected company div (Initially hidden but takes space) */}
-                <div className={`absolute inset-0 w-full transition-all duration-300 ease-in-out ${selectedCompany ? "opacity-100 visible scale-100" : "opacity-0 invisible scale-95"}`}>
+                <div className={`absolute top-0 left-0 right-0 bottom-0 w-full transition-all overflow-auto duration-700 ease-in-out ${selectedCompanyHidden ? "scale-y-100 origin-top" : "scale-y-0 origin-top"}`}>
                     {selectedCompany && <SelectedCompnany company={selectedCompany} id={selectedCompany.id} />}
                 </div>
                 {/* Back Button (Only visible when a company is selected) */}
                 {selectedCompany && (
-                    <button onClick={handleBack} className="absolute top-2 right-2  bg-gray-800 text-white z-4 px-2 rounded-lg transition-all duration-300 hover:bg-gray-700 text-2xl">
+                    <button onClick={handleBack} className="absolute top-2 right-2 bg-gray-800 text-white z-4 px-2 rounded-lg transition-all delay-500 hover:bg-gray-700 text-2xl">
                         x 
                     </button>
                 )}
 
                 {/* List of companies (Hides smoothly but retains space) */}
-                <div className={`relative grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-2 overflow-y-auto overflow-x-hidden w-full transition-all duration-300 ease-in-out ${selectedCompany ? "opacity-0 invisible scale-95" : "opacity-100 visible scale-100"}`}>
+                <div className={`relative grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-2 overflow-y-auto overflow-x-hidden w-full transition-all duration-700 ease-in-out ${selectedCompany ? "scale-y-0 origin-bottom overflow-hidden" : "opacity-100 visible scale-100"}`}>
                     {successCompanies.map((company) => (
                         <Company company={company} key={company.id} handleClick={() => handleClick(company)} />
                     ))}

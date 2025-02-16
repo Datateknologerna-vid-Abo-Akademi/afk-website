@@ -16,7 +16,7 @@ export const Company = (props) => {
 
 export const SelectedCompnany = (props) => {
   return (
-    <div className={"bg-primary rounded-lg  w-full"} id="company">
+    <div className={"bg-primary rounded-lg w-full min-h-full"} id="company">
       <div className="p-4">
         <h1 className="text-2xl">{props.company.name}</h1>
         <div className="text-lg mb-3">{props.company.description}</div>
