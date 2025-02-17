@@ -9,7 +9,7 @@ const Footer = () => {
                     <Image src="/images/AFK_logo_small.png" alt="AFK logo" height={150} width={150} className="p-1 flex"/>
                 </div>
                 <div className="md:text-center text-left md:col-span-1 col-span-2">
-                    <p>The AFK organizers can be reached though he following means:</p>
+                    <p>The AFK organizers can be reached through the following means:</p>
                     <br />
                     <p>Email: afk@abo.fi</p>
                     <br />

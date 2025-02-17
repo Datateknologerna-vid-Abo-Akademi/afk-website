@@ -15,11 +15,11 @@ const EventInformation = () => {
             <br />
             <h2 className="mb-1 text-xl font-bold">Pricing for the year 2025 will be as follows:</h2>
             <ul className="list-disc list-inside">
-                <li className="font-bold italic">Stand at the fair 800 €</li>
+                <li className="font-bold italic">Stand at the fair 700 €</li>
                 <ul className="list-disc list-inside">
                     <li className="mb-3 ml-5 list-['—_']">A stand for your company at the fair equipped with a table, chair, and power outlets.</li>
                 </ul>
-                <li className="font-bold italic">Company presentation 600 €</li>
+                <li className="font-bold italic">Company presentation 500 €</li>
                 <ul className="list-disc list-inside">
                     <li className="mb-3 ml-5 list-['—_']">A 45-minute time slot in one of our lecture halls. 30 minutes for a presentation and 15 minutes for questions. Graphics and audio output are available.</li>
                 </ul>
@@ -27,7 +27,7 @@ const EventInformation = () => {
                 <ul className="list-disc list-inside">
                     <li className="mb-3 ml-5 list-['—_']">A page (A5 size) in our information leaflet that will be available for free at the fair in both digital and physical format as well as permanent visibility on the AFK website as a participant of AFK 2025.</li>
                 </ul>
-                <li className="font-bold italic">Hackathon/coding workshop sponsor 800 €</li>
+                <li className="font-bold italic">Hackathon/coding workshop sponsor 400 - 700 €</li>
                 <ul className="list-disc list-inside">
                     <li className="mb-2 ml-5 list-['—_']">Be the company to sponsor our hackathon! Design a hackathon or coding workshop for participants of the fair and shed some more light on what tech you use.</li>
                     <li className="mb-2 ml-5 list-['—_']">The hackathon has a separate stand/area at the fair and is completely customizable to your liking.</li>
