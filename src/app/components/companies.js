@@ -38,7 +38,7 @@ const Companies = () => {
     return (
         <div className="relative w-full flex flex-col">
             {/* Maintain height with a wrapping div */}
-            <div className="grid grid-rows-[auto,1fr] max-h-[30rem] w-full">
+            <div className="grid grid-rows-[auto,1fr] max-h-[31rem] lg:max-h-[30rem] w-full">
                 
                 {/* Selected company div (Initially hidden but takes space) */}
                 <div className={`absolute top-0 left-0 right-0 bottom-0 w-full transition-all overflow-auto duration-700 ease-in-out ${selectedCompanyHidden ? "scale-y-100 origin-top" : "scale-y-0 origin-top"}`}>
