@@ -4,7 +4,7 @@ import Image from "next/image";
 const Footer = () => {
     return (
         <footer className="bg-gray-800 text-white z-30 h-fit" id="footer">
-            <div className="grid grid-cols-3 items-center justify-center text-center h-fit pt-10 pb-5 px-5 gap-10">
+            <div className="grid grid-cols-3 items-center justify-center text-center h-fit py-10 px-5 gap-10">
                 <div className="items-center justify-center flex">
                     <Image src="/images/AFK_logo_small.png" alt="AFK logo" height={150} width={150} className="p-1 flex"/>
                 </div>

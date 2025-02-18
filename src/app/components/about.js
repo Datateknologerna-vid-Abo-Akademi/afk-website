@@ -20,7 +20,7 @@ const About = () => {
             </div>
             <div className="hidden md:flex flex-col">
                 <div className="pt-10 flex">
-                    <ImageTextLeft imagesrc="/images/afk24-crowd.jpg" imagealt="AFK presentation" imageheight={1063} imagewidth={1600} title={imageLeftTitle} text={imageLeftText} />
+                    <ImageTextLeft imagesrc="/images/afk24-crowd.jpg" imagealt="AFK crowd" imageheight={1063} imagewidth={1600} title={imageLeftTitle} text={imageLeftText} />
                 </div>
                 <div className="pt-10 flex">
                     <ImageTextRight imagesrc="/images/afk24-presentation.jpg" imagealt="AFK presentation" imageheight={1063} imagewidth={1600} title={imageRightTitle} text={imageRightText} />
@@ -28,19 +28,15 @@ const About = () => {
             </div>
             <div className="md:hidden inline-block">
                 <br />
-                <h2 className="mb-1 text-xl font-bold">{imageLeftTitle}</h2>
+                <Image src="/images/afk24-crowd.jpg" alt="AFK crowd" height={1063} width={1600} className="w-full py-1 rounded-md"/>
+                <br />
+                <h2 className="mb-1 text-xl font-bold md:hidden">{imageLeftTitle}</h2>
                 <p>{imageLeftText}</p>
+                <br />
+                <Image src="/images/afk24-presentation.jpg" alt="AFK presentation" height={1063} width={1600} className="w-full py-1 rounded-md"/>
                 <br />
                 <h2 className="mb-1 text-xl font-bold">{imageRightTitle}</h2>
                 <p>{imageRightText}</p>
-            </div>
-            <div className="md:hidden inline-block">
-                <br />
-                <h2 className="mb-1 text-xl font-bold">AFK24 main floor and presentation:</h2>
-                <div className="flex sm:flex-row flex-col gap-2">
-                    <Image src="/images/afk24-crowd.jpg" alt="AFK presentation" height={1063} width={1600} className="w-full flex py-1 rounded-md"/>
-                    <Image src="/images/afk24-presentation.jpg" alt="AFK presentation" height={1063} width={1600} className="w-full flex py-1 rounded-md"/>
-                </div>
             </div>
         </div>
     );
