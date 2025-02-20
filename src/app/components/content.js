@@ -27,9 +27,9 @@ const Content = () => {
           <div className="pt-10">
             <Organizers />
           </div>
-          <div className="pt-10">
+          {/*<div className="pt-10"> // Commented out until we get permission fromo the companies
             <Success />
-          </div>
+          </div>*/}
           <div className="pt-10 pb-10">
             <Contact />
           </div>

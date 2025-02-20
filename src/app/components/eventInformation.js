@@ -5,13 +5,9 @@ const EventInformation = () => {
     return (
         <div id="event-info">
             <h1 className="mb-4 text-3xl">AFK 2025 Information</h1>
-            <p>AFK 2025 will be held on Friday 5th of December 2025. The day begins with the recruitment fair itself, where all companies will be able to present themselves and their work to students. The event will be followed up by a cocktail party in the same building, where students and company representatives can discuss amongst each other in a more personal setting. The fair will be held at our student campus, specifically at Aurum — a shared building between Turun Yliopisto and Åbo Akademi — to bring visibility to IT students of both universities. </p>
+            <p>AFK 2025 will be held on Friday 5th of December 2025. The day begins with the recruitment fair itself, where all companies will be able to present themselves and their work to students. The event will be followed up by a cocktail party in the same building, where students and company representatives can discuss amongst each other in a more personal setting. </p>
             <br />
-            <p>In addition we will also offer the opportunity for one company to sponsor a hackathon. The hackathon will be held at the fair in a separate area and is an opportunity for your company to bring more visibility into what kind of technology and skills you utilize and/or are looking for. </p>
-            <br />
-            <p>The hackathon is completely customizable to your liking. You can decide what you want to showcase, if you want to plan the entire hackathon yourself, or if you only want to sponsor the hackathon financially, and leave the planning to us. </p>
-            <br />
-            <p className="italic">Do not wait too long as we will be using a first come, first served policy, especially regarding the Hackathon. </p>
+            <p>The fair will be held at our student campus, specifically at Aurum — a shared building between Turun Yliopisto and Åbo Akademi — to bring visibility to IT students of both universities. </p>
             <br />
             <h2 className="mb-1 text-xl font-bold">Pricing for the year 2025 will be as follows:</h2>
             <ul className="list-disc list-inside">
@@ -34,6 +30,8 @@ const EventInformation = () => {
                     <li className="ml-5 list-['—_']">The price is negotiable so if it interests you, don't hesitate to reach out. (Only available for one company, first come first served)</li>
                 </ul>
             </ul>
+            <br />
+            <p className="italic">Do not wait too long as we will be using a first come, first served policy, especially regarding the Hackathon. </p>
             <br />
             <p>If you are intereseted in attending AFK, or if you have any questions, don't hesitate in reaching out and <span className="font-bold italic">contacting us</span>. Our contact information is available at the <span className="font-bold italic">bottom of the page, or by clicking the button here below.</span></p>
             <br />
