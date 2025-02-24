@@ -12,27 +12,35 @@ const Form = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // EmailJS keys, can be public
-        emailjs.sendForm(
-            'service_s2a3bfl',    // Service ID
-            'template_ljb5rrr',   // Template ID
-            e.target,           // Form
-            'W4pn0aqcV5OYbhJhV'   // Public Key
-        )
-        .then((result) => {
+        fetch("https://contactapi.afk-fair.com/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                name: e.target.elements.from_name.value,
+                company: e.target.elements.company_name.value,
+                email: e.target.elements.from_email.value,
+                options: e.target.elements.options.value,
+                message: e.target.elements.message.value,
+                "cf-turnstile-response": e.target.elements["cf-turnstile-response"].value
+            })
+        })
+        .then((response) => {
+            if (response.ok) {
+                return response.json();
+            }
+            throw new Error("Network response was not ok.");
+        })
+        .then((data) => {
             setMessageState("Message Sent!");
             setIsSubmitting(false);
             setTimeout(() => {
                 setMessageState(null);
-            }, 5000) // Hide message after 5 seconds
-            }, (error) => {
-                setMessageState("Something went wrong, please try again later.");
-                setIsSubmitting(false);
-                setTimeout(() => {
-                    setMessageState(null);
-                }, 5000) // Hide message after 5 seconds
             }
-        );
+            , 5000);
+        });
+
         // Clear the form
         e.target.reset();
     };
@@ -72,6 +80,7 @@ const Form = () => {
                         <textarea className="mx-2 py-1 focus:outline-none min-h-20" name="message" maxLength={2000} />
                     </div>
                 </div>
+                <div className="cf-turnstile" data-sitekey="0x4AAAAAAA9l0AlYgV9onEKD" name="cf_turnstile_response"></div>
                 <div className="cursor-pointer w-fit transition duration-150 ease-in-out bg-blue-400 hover:bg-blue-600 hover:text-white border-black border-2 rounded-md p-2 flex items-center justify-center">
                     <input type="submit" value="Send" className="cursor-pointer" disabled={isSubmitting} />
                 </div>
