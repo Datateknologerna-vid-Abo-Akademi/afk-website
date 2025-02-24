@@ -13,7 +13,7 @@ const Welcome = () => {
         <div className="text-4xl mb-4">Welcome to</div>
         <h1 className="text-8xl">AFK 2025</h1><br/>
         <h2 className="text-4xl">December 5th, 2025</h2>
-        <h3 className="text-4xl">At somewhere in Turku</h3>
+        <h3 className="text-4xl">At Aurum, Turku</h3>
       </div>
     </div>
   )

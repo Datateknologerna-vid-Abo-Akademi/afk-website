@@ -5,7 +5,7 @@ const EventInformation = () => {
     return (
         <div id="event-info">
             <h1 className="mb-4 text-3xl">AFK 2025 Information</h1>
-            <p>AFK 2025 will be held on Friday 5th of December 2025. The day begins with the recruitment fair itself, where all companies will be able to present themselves and their work to students. The event will be followed up by a cocktail party in the same building, where students and company representatives can discuss amongst each other in a more personal setting. </p>
+            <p>AFK 2025 will be held on Friday 5th of December 2025. The day begins with the recruitment fair itself, where all companies will be able to present themselves and their work to students. The event will be followed up by a cocktail party, where students and company representatives can discuss amongst each other in a more personal setting. Additionally there will also be an optional evening sitz (please note that this will be an informal event).</p>
             <br />
             <p>The fair will be held at our student campus, specifically at Aurum — a shared building between Turun Yliopisto and Åbo Akademi — to bring visibility to IT students of both universities. </p>
             <br />
@@ -21,7 +21,7 @@ const EventInformation = () => {
                 </ul>
                 <li className="font-bold italic">README.afk page and visibility on our website 200 €</li>
                 <ul className="list-disc list-inside">
-                    <li className="mb-3 ml-5 list-['—_']">A page (A5 size) in our information leaflet that will be available for free at the fair in both digital and physical format as well as permanent visibility on the AFK website as a participant of AFK 2025.</li>
+                    <li className="mb-3 ml-5 list-['—_']">A page (A5 size) in our information leaflet that will be available for free at the fair in both digital and physical format, as well as visibility on the AFK website as a participant of AFK 2025.</li>
                 </ul>
                 <li className="font-bold italic">Hackathon/coding workshop sponsor 400 - 700 €</li>
                 <ul className="list-disc list-inside">
@@ -33,7 +33,7 @@ const EventInformation = () => {
             <br />
             <p className="italic">Do not wait too long as we will be using a first come, first served policy, especially regarding the Hackathon. </p>
             <br />
-            <p>If you are intereseted in attending AFK, or if you have any questions, don't hesitate in reaching out and <span className="font-bold italic">contacting us</span>. Our contact information is available at the <span className="font-bold italic">bottom of the page, or by clicking the button here below.</span></p>
+            <p>If you are intereseted in attending AFK, or if you have any questions, don't hesitate in reaching out and <span className="font-bold italic">contacting us</span>. Our contact information is available at the <span className="font-bold italic">bottom of the page, or by clicking the button below.</span></p>
             <br />
             <p className="test-xl font-bold italic">We hope to see you at AFK2025!</p>
             <br />

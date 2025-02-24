@@ -67,9 +67,9 @@ const Form = () => {
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label>Message</label>
+                    <label>Message <span className="italic text-sm">(max 2000 characters)</span></label>
                     <div className="bg-white rounded-md flex flex-col">
-                        <textarea className="mx-2 py-1 focus:outline-none min-h-20" name="message" />
+                        <textarea className="mx-2 py-1 focus:outline-none min-h-20" name="message" maxLength={2000} />
                     </div>
                 </div>
                 <div className="cursor-pointer w-fit transition duration-150 ease-in-out bg-blue-400 hover:bg-blue-600 hover:text-white border-black border-2 rounded-md p-2 flex items-center justify-center">
