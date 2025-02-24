@@ -6,7 +6,7 @@ import Links from "./links";
 
 const About = () => {
     const imageLeftTitle = "What can you expect as a company attending AFK?"
-    const imageLeftText = "As a company you can expect to chat and connect with students from all over the country who study information technology at either Åbo Akademi University or Turku University."
+    const imageLeftText = "As a company you can expect to chat and connect with students that are studying information technology at either Åbo Akademi University or the University of Turku."
     const imageRightTitle = "What can you expect as a student attending AFK?"
     const imageRightText = "As a student you can expect to chat and connect with companies from all over the country who are looking for new employees. You can also attend presentations and workshops held by the companies." 
 

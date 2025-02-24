@@ -75,9 +75,9 @@ const Form = () => {
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label>Message</label>
+                    <label>Message <span className="italic text-sm">(max 2000 characters)</span></label>
                     <div className="bg-white rounded-md flex flex-col">
-                        <textarea className="mx-2 py-1 focus:outline-none min-h-20" name="message" />
+                        <textarea className="mx-2 py-1 focus:outline-none min-h-20" name="message" maxLength={2000} />
                     </div>
                 </div>
                 <div className="cf-turnstile" data-sitekey="0x4AAAAAAA9l0AlYgV9onEKD" name="cf_turnstile_response"></div>
