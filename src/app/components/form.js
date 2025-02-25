@@ -1,11 +1,20 @@
 "use client"
 
-import React from "react";
-import emailjs from "@emailjs/browser";
+import React, { useEffect } from "react";
 
 const Form = () => {
     const [isSubmitting, setIsSubmitting] = React.useState(false);
     const [messageState, setMessageState] = React.useState(null);
+    const [isClient, setIsClient] = React.useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+        const script = document.createElement("script");
+        script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
+        script.async = true;
+        script.defer = true;
+        document.body.appendChild(script);
+    }, []);
 
     const sendEmail = (e) => {
         e.persist();
@@ -80,7 +89,9 @@ const Form = () => {
                         <textarea className="mx-2 py-1 focus:outline-none min-h-20" name="message" maxLength={2000} />
                     </div>
                 </div>
-                <div className="cf-turnstile" data-sitekey="0x4AAAAAAA9l0AlYgV9onEKD" name="cf_turnstile_response"></div>
+                {isClient && (
+                    <div className="cf-turnstile" data-sitekey="0x4AAAAAAA9l0AlYgV9onEKD"></div>
+                )}
                 <div className="cursor-pointer w-fit transition duration-150 ease-in-out bg-blue-400 hover:bg-blue-600 hover:text-white border-black border-2 rounded-md p-2 flex items-center justify-center">
                     <input type="submit" value="Send" className="cursor-pointer" disabled={isSubmitting} />
                 </div>
