@@ -10,7 +10,7 @@ const WelcomeMobile = () => {
             </div>
             <div className="text-center relative flex justify-center items-center flex-col text-gray-200 font-bold [text-shadow:-1px_-1px_0_black,1px_-1px_0_black,-1px_1px_0_black,1px_1px_0_black]">
                 <h1 className="text-4xl">Welcome to AFK 2025</h1>
-                <h2 className="text-2xl">December 5th @ Aurum, Turku</h2>
+                <h2 className="text-2xl">December 5th @ Agora, Turku</h2>
             </div>
         </div>
     )
