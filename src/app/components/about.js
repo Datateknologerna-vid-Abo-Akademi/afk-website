@@ -6,7 +6,7 @@ import Links from "./links";
 
 const About = () => {
     const imageLeftTitle = "What can you expect as a company attending AFK?"
-    const imageLeftText = "As a company you can expect to chat and connect with students that are studying information technology at either Åbo Akademi University or the University of Turku."
+    const imageLeftText = "As a company you can expect to chat and connect with students that are studying information technology at Åbo Akademi University. You can also hold presentations and workshops to introduce your company and what kind of roles you are looking to fill."
     const imageRightTitle = "What can you expect as a student attending AFK?"
     const imageRightText = "As a student you can expect to chat and connect with companies from all over the country who are looking for new employees. You can also attend presentations and workshops held by the companies." 
 
@@ -14,7 +14,7 @@ const About = () => {
         <div id="about">
             <div>
                 <h1 className="text-3xl mb-2">About AFK</h1>
-                <p>Albins Företagskonferens AFK is a recruitment fair organized by <Links name="Datateknologerna vid Åbo Akademi rf" link="https://datateknologerna.org/"/>, aimed at students from Åbo Akademi University and the University of Turku. The event was organized for the first time in the spring of 2024 and we got very positive feedback from both companies and students.</p> 
+                <p>Albins Företagskonferens AFK is a recruitment fair organized by <Links name="Datateknologerna vid Åbo Akademi rf" link="https://datateknologerna.org/"/>, aimed at students from Åbo Akademi University. The event was organized for the first time in the spring of 2024 and we got very positive feedback from both companies and students.</p> 
                 <br /> 
                 <p>This year we are expanding the fair to include even more participants and events, with the aim of improving the experience for students and company representatives alike.</p>
             </div>

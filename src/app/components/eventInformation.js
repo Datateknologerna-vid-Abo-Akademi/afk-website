@@ -5,9 +5,9 @@ const EventInformation = () => {
     return (
         <div id="event-info">
             <h1 className="mb-4 text-3xl">AFK 2025 Information</h1>
-            <p>AFK 2025 will be held on Friday 5th of December 2025. The day begins with the recruitment fair itself, where all companies will be able to present themselves and their work to students. The event will be followed up by a cocktail party, where students and company representatives can discuss amongst each other in a more personal setting. Additionally there will also be an optional evening sitz (please note that this will be an informal event).</p>
+            <p>AFK 2025 will be held on Friday 5th of December 2025. The day begins with the recruitment fair itself, where all companies will be able to present themselves and their work to students. The event will be followed up by a cocktail party, where students and company representatives can discuss amongst each other in a more personal setting.</p>
             <br />
-            <p>The fair will be held at our student campus, specifically at Agora — a shared building between Turun Yliopisto and Åbo Akademi — to bring visibility to IT students of both universities. </p>
+            <p>The fair will be held on our student campus, specifically on the third floor of the Agora building, where the IT department of Åbo Akademi is located.</p>
             <br />
             <h2 className="mb-1 text-xl font-bold">Pricing for the year 2025 will be as follows:</h2>
             <ul className="list-disc list-inside">
@@ -19,7 +19,7 @@ const EventInformation = () => {
                 <ul className="list-disc list-inside">
                     <li className="mb-3 ml-5 list-['—_']">A 45-minute time slot in one of our lecture halls. 30 minutes for a presentation and 15 minutes for questions. Graphics and audio output are available.</li>
                 </ul>
-                <li className="font-bold italic">README.afk page and visibility on our website 200 €</li>
+                <li className="font-bold italic">README.afk page and visibility on our website - included with participation</li>
                 <ul className="list-disc list-inside">
                     <li className="mb-3 ml-5 list-['—_']">A page (A5 size) in our information leaflet that will be available for free at the fair in both digital and physical format, as well as visibility on the AFK website as a participant of AFK 2025.</li>
                 </ul>
