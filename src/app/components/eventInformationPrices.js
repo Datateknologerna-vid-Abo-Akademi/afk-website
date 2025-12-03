@@ -1,11 +1,11 @@
 "use client"
 import React from "react";
 
-const EventInformation = () => {
+const EventInformationPrices = () => {
     return (
         <div id="event-info">
             <h1 className="mb-4 text-3xl">AFK 2025 Information</h1>
-            <p>AFK 2025 will be held on Friday 5th of December 2025. The day begins with the recruitment fair itself, where all companies will be able to present themselves and their work to students. The event will be followed up by a cocktail party, where students and company representatives can discuss amongst each other in a more personal setting.</p>
+            <p>AFK 2025 will be held on Friday 5th of December 2025. The day begins with the recruitment fair itself, where all companies will be able to present themselves and their work to students. The event will be followed up by a Sauna evening at Marlibastun, which is available to students that have attended at least two presentations during the fair.</p>
             <br />
             <p>The fair will be held on our student campus, specifically on the third floor of the Agora building, where the IT department of Åbo Akademi is located.</p>
             <br />
@@ -42,4 +42,4 @@ const EventInformation = () => {
     )
 }
 
-export default EventInformation;
+export default EventInformationPrices;
