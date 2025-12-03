@@ -6,7 +6,8 @@ import Success from "./success";
 import About from "./about";
 import Organizers from "./organizers";
 import Contact from "./contact";
-import EventInformation from "./eventInformation";
+import EventInformationPrices from "./eventInformationPrices";
+import EventInformationFair from "./eventInformationFair";
 
 const Content = () => {
     return (
@@ -22,7 +23,7 @@ const Content = () => {
             <About />
           </div>
           <div className="pt-10">
-            <EventInformation />
+            <EventInformationFair />
           </div>
           <div className="pt-10">
             <Organizers />

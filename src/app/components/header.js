@@ -3,7 +3,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Button from "./button";
+import ButtonHeader from "./buttonHeader";
 
 
 const Header = () => {
@@ -31,11 +31,11 @@ const [lastScrollY, setLastScrollY] = useState(0);
       </button>
       <div className="mr-5 flex items-center gap-4 p-3 text-lg">
         {/*Temporary links/sections, could be changed to different pages with images or companies etc.*/}
-        <Button name="About" id="about"/>
-        <Button name="AFK25 Info" id="event-info"/>
-        <Button name="The Organizers" id="organizers"/>
+        <ButtonHeader name="About" id="about"/>
+        <ButtonHeader name="AFK25 Info" id="event-info"/>
+        <ButtonHeader name="The Organizers" id="organizers"/>
         {/*<Button name="AFK in the past" id="success"/>*/}
-        <Button name="Contact" id="contact"/>
+        <ButtonHeader name="Contact" id="contact"/>
       </div>
     </nav>
   );
