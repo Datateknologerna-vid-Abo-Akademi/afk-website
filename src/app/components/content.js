@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Welcome from "./welcome";
 import WelcomeMobile from "./welcomeMobile";
-import Success from "./success";
+import Participants from "./participants";
 import About from "./about";
 import Organizers from "./organizers";
 import Contact from "./contact";
@@ -23,13 +23,16 @@ const Content = () => {
             <About />
           </div>
           <div className="pt-10">
-            <EventInformationFair />
+            {/*Change around Prices and Fair depending on the time until the event
+               When it is around 1-2 months until the event then showcase the fair, otherwise show the prices*/}
+            <EventInformationPrices />
+            {/*<EventInformationFair />*/}
           </div>
           <div className="pt-10">
             <Organizers />
           </div>
-          {/*<div className="pt-10"> // Commented out until we get permission fromo the companies
-            <Success />
+          {/*<div className="pt-10"> // Commented out until we get permission from the companies
+            <Participants />
           </div>*/}
           <div className="pt-10 pb-10">
             <Contact />
