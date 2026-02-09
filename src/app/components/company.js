@@ -20,7 +20,7 @@ export const SelectedCompnany = (props) => {
       <div className="p-4">
         <h1 className="text-2xl">{props.company.name}</h1>
         <div className="text-lg mb-3">{props.company.description}</div>
-        <div className="text-lg">{"\""+props.company.feedback+"\""}</div>
+        {props.company.feedback ? <div className="text-lg">{"\""+props.company.feedback+"\""}</div> : null}
       </div>
     </div>
   );

@@ -1,10 +1,10 @@
 import React, { use } from "react";
 import {Company, SelectedCompnany} from "./company";
-import companies from "../json/companies.json";
+import participants from "../json/companies.json";
 import { useState, useEffect } from "react";
 
 const Companies = () => {
-    const successCompanies = companies.success;
+    const allCompanies = participants.companies;
     const [selectedCompany, setSelectedCompany] = useState(null);
     const [selectedCompanyDelay, setSelectedCompanyDelay] = useState(true);
     const [selectedCompanyHidden, setSelectedCompanyHidden] = useState(true);
@@ -53,7 +53,7 @@ const Companies = () => {
 
                 {/* List of companies (Hides smoothly but retains space) */}
                 <div className={`relative grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-2 overflow-y-auto overflow-x-hidden w-full transition-all duration-700 ease-in-out ${selectedCompany ? "scale-y-0 origin-bottom overflow-hidden" : "opacity-100 visible scale-100"}`}>
-                    {successCompanies.map((company) => (
+                    {allCompanies.map((company) => (
                         <Company company={company} key={company.id} handleClick={() => handleClick(company)} />
                     ))}
                 </div>
