@@ -1,5 +1,13 @@
 import React from "react";
 
+/**
+ * Button component for links, opens the link in a new tab
+ * @param {*} props - 
+ * - props.name: the text to display on the button, 
+ * - props.link: the link to open when the button is clicked
+ * @returns a button element that opens the specified link in a new tab when clicked
+ */
+
 const ButtonLink = (props) => {
     return (
         <button

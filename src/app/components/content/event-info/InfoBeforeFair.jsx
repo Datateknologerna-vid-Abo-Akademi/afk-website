@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import ButtonLink from "./buttonLink";
+import ButtonLink from "../../ui/ButtonLink";
 
-const EventInformationPrices = () => {
+const InfoBeforeFair = () => {
     return (
         <div id="event-info">
             <h1 className="mb-4 text-3xl">AFK 2026 Information</h1>
@@ -128,4 +128,4 @@ const EventInformationPrices = () => {
     );
 };
 
-export default EventInformationPrices;
+export default InfoBeforeFair;

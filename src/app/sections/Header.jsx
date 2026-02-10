@@ -3,7 +3,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import ButtonHeader from "./buttonHeader";
+import ButtonHeader from "../components/ui/ButtonHeader";
 
 const Header = () => {
     const [lastScrollY, setLastScrollY] = useState(0);

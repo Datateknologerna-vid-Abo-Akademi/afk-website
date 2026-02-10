@@ -3,7 +3,15 @@ import React from "react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-export const Company = (props) => {
+/**
+ * Single company component, used in the list of companies and for the selected company. Contains the logo and name of the company, and when selected, also the description and feedback.
+ * @param {*} props -
+ * - props.company: the company object containing the name, logo, description and feedback of the company
+ * - props.handleClick: the function to call when the company is clicked, used to set the selected company in the parent component
+ * @returns JSX element representing a company
+ */
+
+const Company = (props) => {
     const [hover, setHover] = useState(false);
 
     return (
@@ -25,7 +33,13 @@ export const Company = (props) => {
     );
 };
 
-export const SelectedCompnany = (props) => {
+/**
+ * Selected company component, used to display detailed information about a selected company.
+ * @param {*} props - props.company: the company object containing the name, logo, description and feedback of the company
+ * @returns JSX element representing a selected company
+ */
+
+const SelectedCompany = (props) => {
     return (
         <div className={"bg-primary rounded-lg w-full min-h-full"} id="company">
             <div className="p-4">
@@ -40,3 +54,5 @@ export const SelectedCompnany = (props) => {
         </div>
     );
 };
+
+export { Company, SelectedCompany };

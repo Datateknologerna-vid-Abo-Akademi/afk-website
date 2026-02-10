@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const Welcome = () => {
+const Greeting = () => {
     return (
         <div className="relative w-full" id="welcome-text">
             {/*Image overlay*/}
@@ -26,4 +26,4 @@ const Welcome = () => {
     );
 };
 
-export default Welcome;
+export default Greeting;

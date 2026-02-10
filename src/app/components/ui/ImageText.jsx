@@ -1,7 +1,19 @@
 import React from "react";
 import Image from "next/image";
 
-export const ImageTextLeft = (props) => {
+/**
+ * ImageTextLeft component, displays an image on the left and text on the right
+ * @param {*} props - 
+ * - props.imagesrc: the source of the image, 
+ * - props.imagealt: the alt text for the image, 
+ * - props.imageheight: the height of the image, 
+ * - props.imagewidth: the width of the image, 
+ * - props.title: the title text, 
+ * - props.text: the body text
+ * @returns a component with an image on the left and text on the right
+ */
+
+const ImageTextLeft = (props) => {
     return (
         <div className="w-full relative mb-12">
             <Image
@@ -19,7 +31,19 @@ export const ImageTextLeft = (props) => {
     );
 };
 
-export const ImageTextRight = (props) => {
+/**
+ * ImageTextRight component, displays an image on the right and text on the left
+ * @param {*} props - 
+ * - props.imagesrc: the source of the image, 
+ * - props.imagealt: the alt text for the image, 
+ * - props.imageheight: the height of the image, 
+ * - props.imagewidth: the width of the image, 
+ * - props.title: the title text, 
+ * - props.text: the body text
+ * @returns a component with an image on the right and text on the left
+ */
+
+const ImageTextRight = (props) => {
     return (
         <div className="w-full relative flex justify-end mb-12">
             <Image
@@ -36,3 +60,5 @@ export const ImageTextRight = (props) => {
         </div>
     );
 };
+
+export { ImageTextLeft, ImageTextRight };
