@@ -1,5 +1,4 @@
 import React from "react";
-import WhatIs from "./what_is";
 import Image from "next/image";
 import { ImageTextLeft, ImageTextRight } from "./imageText";
 import Links from "./links";
