@@ -1,8 +1,7 @@
 import React from "react";
-import WhatIs from "./what_is";
 import Image from "next/image";
-import { ImageTextLeft, ImageTextRight } from "./imageText";
-import Links from "./links";
+import { ImageTextLeft, ImageTextRight } from "@/app/components/ui/ImageText";
+import Link from "./ui/Link";
 
 const About = () => {
     const imageLeftTitle = "What can you expect as a company attending AFK?"
@@ -14,7 +13,7 @@ const About = () => {
         <div id="about">
             <div>
                 <h1 className="text-3xl mb-2">About AFK</h1>
-                <p>Albins Företagskonferens AFK is a recruitment fair organized by <Links name="Datateknologerna vid Åbo Akademi rf" link="https://datateknologerna.org/"/>, aimed at students from Åbo Akademi University. The event was organized for the first time in the spring of 2024 and we got very positive feedback from both companies and students.</p> 
+                <p>Albins Företagskonferens AFK is a recruitment fair organized by <Link name="Datateknologerna vid Åbo Akademi rf" link="https://datateknologerna.org/"/>, aimed at students from Åbo Akademi University. The event was organized for the first time in the spring of 2024 and we got very positive feedback from both companies and students.</p> 
                 <br /> 
                 <p>This year we are expanding the fair to include even more participants and events, with the aim of improving the experience for students and company representatives alike.</p>
             </div>

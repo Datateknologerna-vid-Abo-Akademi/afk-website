@@ -2,6 +2,10 @@
 
 import Image from "next/image";
 
+/** 
+ * MOBILE HEADER CURRENTLY NOT IN USE, BUT KEPT FOR FUTURE DEVELOPMENT
+**/
+
 const HeaderMobile = () => {
     return (
         <nav className={`bg-primary flex items-center justify-between fixed border-black shadow-md left-0 w-full bg-opacity-95 z-10"}`} id="headerMobile">

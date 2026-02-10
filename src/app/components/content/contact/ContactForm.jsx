@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 
-const Form = () => {
+const ContactForm = () => {
     const [isSubmitting, setIsSubmitting] = React.useState(false);
     const [messageState, setMessageState] = React.useState(null);
     const [isClient, setIsClient] = React.useState(false);
@@ -105,4 +105,4 @@ const Form = () => {
     )
 }
 
-export default Form;
+export default ContactForm;

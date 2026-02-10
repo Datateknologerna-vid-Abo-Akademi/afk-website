@@ -1,7 +1,12 @@
 import React, { use } from "react";
-import {Company, SelectedCompnany} from "./company";
-import participants from "../json/companies.json";
+import {Company, SelectedCompany} from "./SingleCompany";
+import participants from "@/app/json/companies.json";
 import { useState, useEffect } from "react";
+
+/**
+ * Companies component, used to display a list of all participating companies and the selected company. Contains the logic for selecting a company and displaying its details.
+ * @returns JSX element including all companies
+ */
 
 const Companies = () => {
     const allCompanies = participants.companies;
@@ -42,7 +47,7 @@ const Companies = () => {
                 
                 {/* Selected company div (Initially hidden but takes space) */}
                 <div className={`absolute top-0 left-0 right-0 bottom-0 w-full transition-all overflow-auto duration-700 ease-in-out ${selectedCompanyHidden ? "scale-y-100 origin-top" : "scale-y-0 origin-top"}`}>
-                    {selectedCompany && <SelectedCompnany company={selectedCompany} id={selectedCompany.id} />}
+                    {selectedCompany && <SelectedCompany company={selectedCompany} id={selectedCompany.id} />}
                 </div>
                 {/* Back Button (Only visible when a company is selected) */}
                 {selectedCompany && (

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const WelcomeMobile = () => {
+const GreetingMobile = () => {
     return (
         <div className="bg-primary h-fit relative w-full mb-10 mt-5 animate-appear" id="welcome-text">
             <div className="flex items-center justify-center">
@@ -16,4 +16,4 @@ const WelcomeMobile = () => {
     )
 }
 
-export default WelcomeMobile;
+export default GreetingMobile;

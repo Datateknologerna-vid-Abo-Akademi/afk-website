@@ -1,9 +1,9 @@
 "use client"
 import React from "react";
 import Image from "next/image";
-import ButtonLink from "./buttonLink";
+import ButtonLink from "../../ui/ButtonLink";
 
-const EventInformationFair = () => {
+const InfoFair = () => {
     return (
         <div id="event-info">
             <h1 className="mb-4 text-3xl">AFK 2025 Information</h1>
@@ -29,4 +29,4 @@ const EventInformationFair = () => {
     )
 }
 
-export default EventInformationFair;
+export default InfoFair;

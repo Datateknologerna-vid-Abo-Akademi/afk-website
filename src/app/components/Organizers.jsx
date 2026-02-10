@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Links from "./links";
+import Links from "./ui/Link";
 
 const Organizers = () => {
     return (
