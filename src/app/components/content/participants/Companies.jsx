@@ -1,5 +1,5 @@
-import React, { use } from "react";
-import {Company, SelectedCompany} from "./SingleCompany";
+import React from "react";
+import { Company, SelectedCompany } from "./SingleCompany";
 import participants from "@/app/json/companies.json";
 import { useState, useEffect } from "react";
 
@@ -14,10 +14,6 @@ const Companies = () => {
     const [selectedCompanyDelay, setSelectedCompanyDelay] = useState(true);
     const [selectedCompanyHidden, setSelectedCompanyHidden] = useState(true);
 
-
-    useEffect(() => {
-        console.log(selectedCompany);
-    }, [selectedCompany]);
 
     const handleClick = (company) => {
         setSelectedCompany(company);
@@ -35,15 +31,10 @@ const Companies = () => {
         }
     }, [selectedCompany]);
 
-    useEffect(() => {
-        console.log(selectedCompanyHidden);
-    }, [selectedCompanyHidden]);
-
-
     return (
         <div className="relative w-full flex flex-col">
             {/* Maintain height with a wrapping div */}
-            <div className="grid grid-rows-[auto,1fr] max-h-[31rem] lg:max-h-[30rem] w-full">
+            <div className="grid grid-rows-[auto,1fr] max-h-[34rem] lg:max-h-[32rem] w-full">
                 
                 {/* Selected company div (Initially hidden but takes space) */}
                 <div className={`absolute top-0 left-0 right-0 bottom-0 w-full transition-all overflow-auto duration-700 ease-in-out ${selectedCompanyHidden ? "scale-y-100 origin-top" : "scale-y-0 origin-top"}`}>
@@ -51,13 +42,13 @@ const Companies = () => {
                 </div>
                 {/* Back Button (Only visible when a company is selected) */}
                 {selectedCompany && (
-                    <button onClick={handleBack} className="absolute top-2 right-2 bg-gray-800 text-white z-4 px-2 rounded-lg transition-all delay-500 hover:bg-gray-700 text-2xl">
-                        x 
+                    <button onClick={handleBack} className="absolute top-3 right-3 border border-blue-500/60 text-blue-100 z-10 px-3 rounded-full transition-all delay-150 hover:bg-red-600/70 text-xs uppercase tracking-[0.2em]">
+                        X
                     </button>
                 )}
 
                 {/* List of companies (Hides smoothly but retains space) */}
-                <div className={`relative grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-2 overflow-y-auto overflow-x-hidden w-full transition-all duration-700 ease-in-out ${selectedCompany ? "scale-y-0 origin-bottom overflow-hidden" : "opacity-100 visible scale-100"}`}>
+                <div className={`relative grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 overflow-y-auto overflow-x-hidden w-full transition-all duration-700 ease-in-out ${selectedCompany ? "scale-y-0 origin-bottom overflow-hidden" : "opacity-100 visible scale-100"}`}>
                     {allCompanies.map((company) => (
                         <Company company={company} key={company.id} handleClick={() => handleClick(company)} />
                     ))}

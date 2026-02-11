@@ -11,7 +11,7 @@ import React from "react";
 const ButtonLink = (props) => {
     return (
         <button
-            className="w-full transition duration-150 ease-in-out bg-primary hover:bg-blue-400 hover:text-white border-black border-2 rounded-md p-2 flex items-center justify-center"
+            className="w-full transition duration-150 ease-in-out border border-blue-500/60 rounded-full p-3 flex items-center justify-center uppercase tracking-[0.2em] text-sm text-blue-100 hover:bg-blue-600/20"
             onClick={() => window.open(props.link)}
         >
             {props.name}

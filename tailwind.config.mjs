@@ -13,7 +13,8 @@ export default {
       },
       colors: {
         primary: "#92C7FF",
-        secondary: "#4d98e8"
+        secondary: "#4d98e8",
+        participant: "rgba(78, 116, 255, 0.45)"
       },
       inset:{
         "1/5": "20%",

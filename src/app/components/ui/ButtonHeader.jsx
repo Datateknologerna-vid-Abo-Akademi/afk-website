@@ -11,7 +11,7 @@ import React from "react";
 const ButtonHeader = (props) => {
     return (
         <button 
-        className="text-black transition duration-150 ease-in-out hover:bg-blue-400 hover:text-white cursor-pointer p-2 rounded-md" 
+        className="text-white transition duration-150 ease-in-out hover:text-blue-200 cursor-pointer px-3 py-2 rounded-full border border-transparent hover:border-blue-500/50" 
         onClick={() => {document.getElementById(props.id).scrollIntoView({behavior: "smooth"})}}>
         {props.name}
         </button>

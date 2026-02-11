@@ -12,10 +12,13 @@ const About = () => {
     return (
         <div id="about">
             <div>
-                <h1 className="text-3xl mb-2">About AFK</h1>
-                <p>Albins Företagskonferens AFK is a recruitment fair organized by <Link name="Datateknologerna vid Åbo Akademi rf" link="https://datateknologerna.org/"/>, aimed at students from Åbo Akademi University. The event was organized for the first time in the spring of 2024 and we got very positive feedback from both companies and students.</p> 
+                <h1 className="afk-section-title afk-title">About AFK</h1>
+                <p className="text-md text-blue-100 leading-relaxed">Albins Företagskonferens AFK is a recruitment fair organized by <Link name="Datateknologerna vid Åbo Akademi rf" link="https://datateknologerna.org/"/>, aimed at students from Åbo Akademi University. The event was first held in the spring of 2024 and was organized again in the fall of 2025, receiving positive feedback from both companies and students.</p> 
                 <br /> 
-                <p>This year we are expanding the fair to include even more participants and events, with the aim of improving the experience for students and company representatives alike.</p>
+                <p className="text-md text-blue-100 leading-relaxed">This year we are expanding the fair to include even more participants and events, with the aim of improving the experience for students and company representatives alike.</p>
+
+                { /* Later addition: Planning to include keynotes in the event this year so add in when keynote speakers are confirmed */ }
+
             </div>
             <div className="hidden md:flex flex-col">
                 <div className="pt-10 flex">
@@ -29,13 +32,13 @@ const About = () => {
                 <br />
                 <Image src="/images/afk24-crowd.jpg" alt="AFK crowd" height={1063} width={1600} className="w-full py-1 rounded-md"/>
                 <br />
-                <h2 className="mb-1 text-xl font-bold md:hidden">{imageLeftTitle}</h2>
-                <p>{imageLeftText}</p>
+                <h2 className="mb-1 text-lg font-semibold text-blue-100 md:hidden">{imageLeftTitle}</h2>
+                <p className="text-md text-blue-100 leading-relaxed">{imageLeftText}</p>
                 <br />
                 <Image src="/images/afk24-presentation.jpg" alt="AFK presentation" height={1063} width={1600} className="w-full py-1 rounded-md"/>
                 <br />
-                <h2 className="mb-1 text-xl font-bold">{imageRightTitle}</h2>
-                <p>{imageRightText}</p>
+                <h2 className="mb-1 text-lg font-semibold text-blue-100">{imageRightTitle}</h2>
+                <p className="text-md text-blue-100 leading-relaxed">{imageRightText}</p>
             </div>
         </div>
     );

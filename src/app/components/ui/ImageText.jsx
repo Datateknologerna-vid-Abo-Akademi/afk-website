@@ -23,9 +23,9 @@ const ImageTextLeft = (props) => {
                 width={props.imagewidth}
                 className="w-2/5 rounded-md"
             />
-            <div className="bg-blue-100 p-6 absolute top-1/2 left-[30%] transform -translate-y-[20%] rounded-md">
-                <h1 className="text-3xl">{props.title}</h1>
-                <p className="text-md mt-2">{props.text}</p>
+            <div className="afk-card absolute top-1/2 left-[30%] transform -translate-y-[20%]">
+                <h1 className="afk-title text-2xl">{props.title}</h1>
+                <p className="text-md mt-3 text-blue-100">{props.text}</p>
             </div>
         </div>
     );
@@ -53,9 +53,9 @@ const ImageTextRight = (props) => {
                 width={props.imagewidth}
                 className="w-2/5 rounded-md"
             />
-            <div className="bg-blue-100 text-black p-6 absolute top-1/2 right-[30%] transform -translate-y-[20%] rounded-md">
-                <h1 className="text-3xl">{props.title}</h1>
-                <p className="text-md mt-2">{props.text}</p>
+            <div className="afk-card absolute top-1/2 right-[30%] transform -translate-y-[20%]">
+                <h1 className="afk-title text-2xl">{props.title}</h1>
+                <p className="text-md mt-3 text-blue-100">{props.text}</p>
             </div>
         </div>
     );

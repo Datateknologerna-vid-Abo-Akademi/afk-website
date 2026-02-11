@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import Image from "next/image";
-import ButtonLink from "../../ui/ButtonLink";
+import ButtonLink from "@/app/components/ui/ButtonLink";
 
 const InfoFair = () => {
     return (

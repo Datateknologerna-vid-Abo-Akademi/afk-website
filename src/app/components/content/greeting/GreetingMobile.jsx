@@ -2,17 +2,28 @@ import Image from "next/image";
 
 const GreetingMobile = () => {
     return (
-        <div className="bg-primary h-fit relative w-full mb-10 mt-5 animate-appear" id="welcome-text">
-            <div className="flex items-center justify-center">
-                <div className="flex items-center justify-center">
-                    <Image src="/images/AFK_logo.png" alt="Welcome" width={375} height={375} className="p-5" />
-                </div>
-            </div>
-            <div className="text-center relative flex justify-center items-center flex-col text-gray-200 font-bold [text-shadow:-1px_-1px_0_black,1px_-1px_0_black,-1px_1px_0_black,1px_1px_0_black]">
-                <h1 className="text-4xl">Welcome to AFK 2026</h1>
-                <h2 className="text-2xl">November 27th @ Aurum, Turku</h2>
-            </div>
-        </div>
+        <section className="px-6 pt-8 pb-10 m-auto text-md flex flex-col items-center animate-appear" id="welcome-text">
+            <Image
+                src="/images/AFK_LOGO.png"
+                alt="AFK logo"
+                height={300}
+                width={300}
+                className="m-auto pb-10"
+            />
+            <h1 className="afk-title text-5xl">AFK 2026</h1>
+            <p className="text-blue-100 text-center mt-3">November 27th, 2026 @ Aurum, Turku</p>
+            <p className="text-blue-100 text-center mt-3">Meet the companies, dive into talks, and end the day with our sauna evening.</p>
+            <button
+                className="afk-pill mt-6"
+                onClick={() => {
+                    document
+                        .getElementById("contact")
+                        .scrollIntoView({ behavior: "smooth" });
+                }}
+            >
+                Attend AFK
+            </button>
+        </section>
     )
 }
 

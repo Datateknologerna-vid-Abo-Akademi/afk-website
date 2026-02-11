@@ -11,7 +11,7 @@ import React from "react";
 const Link = (props) => {
     return (
         <a 
-        className="font-bold text-blue-500 hover:text-primary" 
+        className="afk-link font-semibold cursor-pointer" 
         href={props.link}>
         {props.name}
         </a>

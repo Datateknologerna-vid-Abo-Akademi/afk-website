@@ -55,50 +55,50 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="bg-primary mx-auto max-w-3xl rounded-md border-black border-2">
-            <form className="md:px-10 px-5 py-5 flex flex-col" onSubmit={sendEmail}>
-                <h1 className="text-3xl mb-2">Contact Form</h1>
-                <p className="mb-4">Fields marked with <span className="text-red-600">*</span> are mandatory, the rest can be left empty.</p>
+        <div className="afk-card mx-auto max-w-3xl">
+            <form className="md:px-10 py-5 flex flex-col" onSubmit={sendEmail}>
+                <h1 className="afk-section-title afk-title">Contact Form</h1>
+                <p className="mb-4 text-md text-blue-100">Fields marked with <span className="text-red-400">*</span> are mandatory, the rest can be left empty.</p>
                 <div className="mb-3">
-                    <label>Name: <span className="text-red-600">*</span></label>
-                    <div className="bg-white rounded-md flex flex-col">
-                        <input className="mx-2 py-1 focus:outline-none" type="text" name="from_name" placeholder="Matti Meikäläinen" required />
+                    <label className="text-md text-blue-100">Name: <span className="text-red-400">*</span></label>
+                    <div className="bg-black/60 rounded-md border border-blue-500/30 flex flex-col">
+                        <input className="mx-3 py-2 bg-transparent text-blue-100 placeholder:text-blue-200/60 focus:outline-none" type="text" name="from_name" placeholder="Matti Meikalainen" required />
                     </div>
                 </div>
                 <div className="mb-3">
-                    <label>Company: <span className="text-red-600">*</span></label>
-                    <div className="bg-white rounded-md flex flex-col">
-                        <input className="mx-2 py-1 focus:outline-none" type="text" name="company_name" placeholder="Company Oy" required />
+                    <label className="text-md text-blue-100">Company: <span className="text-red-400">*</span></label>
+                    <div className="bg-black/60 rounded-md border border-blue-500/30 flex flex-col">
+                        <input className="mx-3 py-2 bg-transparent text-blue-100 placeholder:text-blue-200/60 focus:outline-none" type="text" name="company_name" placeholder="Company Oy" required />
                     </div>
                 </div>
                 <div className="mb-3">
-                    <label>Email: <span className="text-red-600">*</span></label>
-                    <div className="bg-white rounded-md flex flex-col">
-                        <input className="mx-2 py-1 focus:outline-none" type="email" name="from_email" placeholder="placeholder@company.com" required />
+                    <label className="text-md text-blue-100">Email: <span className="text-red-400">*</span></label>
+                    <div className="bg-black/60 rounded-md border border-blue-500/30 flex flex-col">
+                        <input className="mx-3 py-2 bg-transparent text-blue-100 placeholder:text-blue-200/60 focus:outline-none" type="email" name="from_email" placeholder="placeholder@company.com" required />
                     </div>
                 </div>
                 <div className="mb-3">
-                    <label>What are you interested in: </label>
-                    <div className="bg-white rounded-md flex flex-col">
-                        <input className="mx-2 py-1 focus:outline-none" type="text" name="options" placeholder="e.g. a stand, readme and presentation" />
+                    <label className="text-md text-blue-100">What are you interested in: </label>
+                    <div className="bg-black/60 rounded-md border border-blue-500/30 flex flex-col">
+                        <input className="mx-3 py-2 bg-transparent text-blue-100 placeholder:text-blue-200/60 focus:outline-none" type="text" name="options" placeholder="e.g. a stand, readme and presentation" />
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label>Message <span className="italic text-sm">(max 2000 characters)</span></label>
-                    <div className="bg-white rounded-md flex flex-col">
-                        <textarea className="mx-2 py-1 focus:outline-none min-h-20" name="message" maxLength={2000} />
+                    <label className="text-md text-blue-100">Message <span className="italic text-sm">(max 2000 characters)</span></label>
+                    <div className="bg-black/60 rounded-md border border-blue-500/30 flex flex-col">
+                        <textarea className="mx-3 py-2 bg-transparent text-blue-100 placeholder:text-blue-200/60 focus:outline-none min-h-24" name="message" maxLength={2000} />
                     </div>
                 </div>
                 {isClient && (
                     <div className="cf-turnstile" data-sitekey="0x4AAAAAAA9l0AlYgV9onEKD"></div>
                 )}
-                <div className="cursor-pointer w-fit transition duration-150 ease-in-out bg-blue-400 hover:bg-blue-600 hover:text-white border-black border-2 rounded-md p-2 flex items-center justify-center">
+                <div className="cursor-pointer w-fit transition duration-150 ease-in-out border border-blue-500/60 rounded-full px-6 py-2 flex items-center justify-center uppercase tracking-[0.2em] text-md text-blue-100 hover:bg-blue-600/20">
                     <input type="submit" value="Send" className="cursor-pointer" disabled={isSubmitting} />
                 </div>
                 {messageState && (
                     messageState === "Message Sent!" ? 
-                    <div className="bg-green-200 p-2 text-center rounded-md mt-4"><p className="text-green-800">{messageState}</p></div> : 
-                    <div className="bg-red-200 p-2 text-center rounded-md mt-4"><p className="text-red-800">{messageState}</p></div>
+                    <div className="bg-green-600/20 p-2 text-center rounded-md mt-4"><p className="text-green-200 text-md">{messageState}</p></div> : 
+                    <div className="bg-red-600/20 p-2 text-center rounded-md mt-4"><p className="text-red-200 text-md">{messageState}</p></div>
                 )}
             </form>
         </div>
