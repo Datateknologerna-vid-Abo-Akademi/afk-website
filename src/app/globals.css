@@ -83,7 +83,6 @@ body {
 .afk-outline {
   color: transparent;
   -webkit-text-stroke: 3px var(--afk-paper);
-  text-stroke: 3px var(--afk-paper);
 }
 
 .afk-card {
@@ -115,14 +114,14 @@ body {
 }
 
 .afk-section-title {
-  font-size: 2rem;
+  /*font-size: 2rem;*/
   margin-bottom: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
 
 .afk-section-subtitle {
-  font-size: 1.1rem;
+  /*font-size: 1.1rem;*/
   color: var(--afk-muted);
 }
 
@@ -144,8 +143,7 @@ body {
   border: 1px solid rgba(122, 162, 255, 0.6);
   color: var(--afk-paper);
   text-transform: uppercase;
-  font-size: 0.85rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.12em;
 }
 
 .afk-divider {

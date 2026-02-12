@@ -41,9 +41,9 @@ const SelectedCompany = (props) => {
         <div className={"afk-card w-full min-h-full"} id="company">
             <div className="p-6">
                 <h1 className="afk-title text-3xl mb-3">{props.company.name}</h1>
-                <div className="text-sm text-blue-100 leading-relaxed mb-4">{props.company.description}</div>
+                <div className="text-blue-100 leading-relaxed mb-4">{props.company.description}</div>
                 {props.company.feedback ? (
-                    <div className="text-sm text-blue-200 italic">
+                    <div className="text-blue-200 italic">
                         {'"' + props.company.feedback + '"'}
                     </div>
                 ) : null}

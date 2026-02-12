@@ -29,28 +29,29 @@ const Header = () => {
             id="header"
         >
             <button
-                className="ml-6 flex items-center justify-center gap-3 py-3"
+                className="ml-6 text-lg flex py-3"
                 onClick={() => {
                     document
                         .getElementById("root")
                         .scrollIntoView({ behavior: "smooth" });
                 }}
             >
-                { /*<Image
-                    src="/images/AFK_LOGO.png"
-                    alt="AFK logo"
-                    height={50}
-                    width={50}
-                /> */ }
                 <span className="afk-pill">AFK 2026</span>
             </button>
-            <div className="mr-6 flex items-center gap-3 p-3 text-sm tracking-[0.18em] uppercase">
+            {/* <div className="ml-6">
+                <Image
+                    src="/images/AFK_LOGO.png"
+                    alt="AFK logo"
+                    height={80}
+                    width={80}
+                    />
+            </div> */}
+            <div className="mr-6 flex text-base items-center gap-3 p-3 tracking-[0.12em] uppercase">
                 {/*Temporary links/sections, could be changed to different pages with images or companies etc.*/}
                 <ButtonHeader name="About" id="about" />
                 <ButtonHeader name="AFK26 Info" id="event-info" />
                 <ButtonHeader name="The Organizers" id="organizers" />
-                {/*<ButtonHeader name="Participants" id="participants"/> 
-                 Commented out until we have approval from companies */}
+                {/* <ButtonHeader name="Participants" id="participants"/> */}
                 <ButtonHeader name="Contact" id="contact" />
             </div>
         </nav>

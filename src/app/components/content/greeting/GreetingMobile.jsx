@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const GreetingMobile = () => {
     return (
-        <section className="px-6 pt-8 pb-10 m-auto text-md flex flex-col items-center animate-appear" id="welcome-text">
+        <section className="px-6 pt-8 pb-10 m-auto flex flex-col items-center animate-appear" id="welcome-text">
             <Image
                 src="/images/AFK_LOGO.png"
                 alt="AFK logo"

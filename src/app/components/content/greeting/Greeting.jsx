@@ -4,42 +4,43 @@ import Image from "next/image";
 
 const Greeting = () => {
     return (
-        <section className="afk-hero text-md w-full" id="welcome-text">
-            <div className="ml-10 col-span-6 flex flex-col justify-center">
-                { /* <div className="afk-pill">Recruitment Fair</div> */ }
-                <div className="mx-auto flex flex-col justify-center gap-6">
-                    <h1 className="afk-title text-6xl lg:text-7xl">
+        <section className="w-full my-16" id="welcome-text">
+            <div className="flex items-center justify-center gap-48">
+                <div className="ml-10 flex flex-col justify-center">
+                    { /* <div className="afk-pill">Recruitment Fair</div> */ }
+                    <div className="mx-auto flex flex-col justify-center gap-3">
+                        <h1 className="afk-title text-6xl lg:text-7xl">
                             AFK 2026
-                    </h1>
-                    <p className="text-lg text-blue-100 max-w-xl">
-                        November 27th, 2026 at Aurum, Turku. Meet the companies, dive
-                        into talks, and end the day with our sauna evening.
-                    </p>
-                    <div className="flex items-center gap-4">
-                        <button
-                            className="afk-pill"
-                            onClick={() => {
-                                document
-                                    .getElementById("contact")
-                                    .scrollIntoView({ behavior: "smooth" });
-                            }}
-                        >
-                            Attend AFK
-                        </button>
-                        <span className="text-md uppercase tracking-[0.3em] text-blue-200">
-                            2026
-                        </span>
+                        </h1>
+                        <p className="text-xl font-semibold text-blue-100 max-w-xl">
+                            November 27th, 2026 @ Aurum, Turku
+                        </p>
+                        <p className="text-blue-100 max-w-xl">
+                        Meet the companies, attend insightful keynotes and presentations, and close the day with a relaxing sauna evening.
+                        </p>
+                        <div className="flex items-center gap-4">
+                            <button
+                                className="afk-pill hover:bg-blue-500/80 transition-colors duration-300"
+                                onClick={() => {
+                                    document
+                                        .getElementById("contact")
+                                        .scrollIntoView({ behavior: "smooth" });
+                                }}
+                            >
+                                Attend AFK
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="col-span-6 flex">
-                <Image
-                    src="/images/AFK_LOGO.png"
-                    alt="AFK logo"
-                    height={350}
-                    width={350}
-                    className="m-auto"
-                />
+                <div className="flex">
+                    <Image
+                        src="/images/AFK_LOGO.png"
+                        alt="AFK logo"
+                        height={350}
+                        width={350}
+                        className="m-auto"
+                    />
+                </div>
             </div>
         </section>
     );

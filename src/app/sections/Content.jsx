@@ -33,11 +33,12 @@ const Content = () => {
                 <div className="afk-card">
                     <Organizers />
                 </div>
-                { /* Participants commented out until we have approval from companies 
+                {/*Participants commented out until we get approval from the companies*/}
+                {/*
                 <div className="afk-card">
                     <Participants />
-                </div>
-                */ }
+                </div> 
+                */}
                 <div className="afk-card">
                     <Contact />
                 </div>

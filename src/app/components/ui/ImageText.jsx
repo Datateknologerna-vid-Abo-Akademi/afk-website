@@ -25,7 +25,7 @@ const ImageTextLeft = (props) => {
             />
             <div className="afk-card absolute top-1/2 left-[30%] transform -translate-y-[20%]">
                 <h1 className="afk-title text-2xl">{props.title}</h1>
-                <p className="text-md mt-3 text-blue-100">{props.text}</p>
+                <p className="mt-3 text-blue-100">{props.text}</p>
             </div>
         </div>
     );
@@ -55,7 +55,7 @@ const ImageTextRight = (props) => {
             />
             <div className="afk-card absolute top-1/2 right-[30%] transform -translate-y-[20%]">
                 <h1 className="afk-title text-2xl">{props.title}</h1>
-                <p className="text-md mt-3 text-blue-100">{props.text}</p>
+                <p className="mt-3 text-blue-100">{props.text}</p>
             </div>
         </div>
     );
