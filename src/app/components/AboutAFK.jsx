@@ -25,7 +25,7 @@ const About = () => {
                     <ImageTextLeft imagesrc="/images/stands/afk24-crowd.jpg" imagealt="AFK crowd" imageheight={1063} imagewidth={1600} title={imageLeftTitle} text={imageLeftText} />
                 </div>
                 <div className="pt-10 flex">
-                    <ImageTextRight imagesrc="/images/presentations/afk24-presentation.jpg" imagealt="AFK presentation" imageheight={1063} imagewidth={1600} title={imageRightTitle} text={imageRightText} />
+                    <ImageTextRight imagesrc="/images/presentations/crosskey-presentation-25.jpg" imagealt="AFK presentation" imageheight={1063} imagewidth={1600} title={imageRightTitle} text={imageRightText} />
                 </div>
             </div>
             <div className="md:hidden inline-block">
@@ -35,7 +35,7 @@ const About = () => {
                 <h2 className="mb-1 text-xl font-semibold text-blue-100 md:hidden">{imageLeftTitle}</h2>
                 <p className="text-blue-100 leading-relaxed">{imageLeftText}</p>
                 <br />
-                <Image src="/images/presentations/afk24-presentation.jpg" alt="AFK presentation" height={1063} width={1600} className="w-full py-1 rounded-md"/>
+                <Image src="/images/presentations/crosskey-presentation-25.jpg" alt="AFK presentation" height={1063} width={1600} className="w-full py-1 rounded-md"/>
                 <br />
                 <h2 className="mb-1 text-xl font-semibold text-blue-100 md:hidden">{imageRightTitle}</h2>
                 <p className="text-blue-100 leading-relaxed">{imageRightText}</p>
