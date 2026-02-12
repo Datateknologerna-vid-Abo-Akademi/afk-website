@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="grid grid-cols-3 items-center justify-center text-left md:text-center h-fit py-10 px-6 gap-10">
                 <div className="items-center justify-center flex">
                     <Image
-                        src="/images/AFK_LOGO.png"
+                        src="/images/logos/AFK_LOGO.png"
                         alt="AFK logo"
                         height={200}
                         width={200}
@@ -32,7 +32,7 @@ const Footer = () => {
                 </div>
                 <div className="items-center justify-center md:flex hidden">
                     <Image
-                        src="/images/footeralbin.png"
+                        src="/images/logos/footeralbin.png"
                         alt="Albin image"
                         height={180}
                         width={180}

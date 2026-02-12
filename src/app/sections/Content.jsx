@@ -7,7 +7,7 @@ import GreetingMobile from "../components/content/greeting/GreetingMobile";
 import Participants from "../components/content/participants/Participants";
 import About from "../components/AboutAFK";
 import Organizers from "../components/Organizers";
-import Contact from "../components/content/contact/ContactInfo";
+import Contact from "../components/content/contact/Contact";
 import InfoBeforeFair from "../components/content/event-info/InfoBeforeFair";
 import InfoFair from "../components/content/event-info/InfoFair";
 

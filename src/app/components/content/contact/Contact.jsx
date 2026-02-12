@@ -1,6 +1,6 @@
 import Form from "./ContactForm";
 
-const ContactInfo = () => {
+const Contact = () => {
     return (
         <div id="contact">
             <div>
@@ -12,4 +12,4 @@ const ContactInfo = () => {
     )
 }
 
-export default ContactInfo;
+export default Contact;

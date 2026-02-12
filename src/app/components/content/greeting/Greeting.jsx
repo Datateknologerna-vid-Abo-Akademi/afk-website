@@ -34,7 +34,7 @@ const Greeting = () => {
                 </div>
                 <div className="flex">
                     <Image
-                        src="/images/AFK_LOGO.png"
+                        src="/images/logos/AFK_LOGO.png"
                         alt="AFK logo"
                         height={350}
                         width={350}

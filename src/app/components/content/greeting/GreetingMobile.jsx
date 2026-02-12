@@ -4,7 +4,7 @@ const GreetingMobile = () => {
     return (
         <section className="px-6 pt-8 pb-10 m-auto flex flex-col items-center animate-appear" id="welcome-text">
             <Image
-                src="/images/AFK_LOGO.png"
+                src="/images/logos/AFK_LOGO.png"
                 alt="AFK logo"
                 height={300}
                 width={300}
