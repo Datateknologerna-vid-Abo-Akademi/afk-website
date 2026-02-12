@@ -100,6 +100,15 @@ const ContactForm = () => {
                     <div className="bg-green-600/20 p-2 text-center rounded-md mt-4"><p className="text-green-200">{messageState}</p></div> : 
                     <div className="bg-red-600/20 p-2 text-center rounded-md mt-4"><p className="text-red-200">{messageState}</p></div>
                 )}
+
+                {/*
+                // Use this for testing the form submisstion status messages
+                {true && (
+                    false ? 
+                    <div className="bg-green-600/20 p-2 text-center rounded-md mt-4"><p className="text-green-200">example</p></div> : 
+                    <div className="bg-red-600/20 p-2 text-center rounded-md mt-4"><p className="text-red-200">example</p></div>
+                )}
+                */}
             </form>
         </div>
     )

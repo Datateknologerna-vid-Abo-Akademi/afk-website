@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --scrollbar-thumb: #777777;
-  --scrollbar-track: #d0d0d0;
+  --scrollbar-thumb: #3b6cff;
+  --scrollbar-track: #1d1d1d;
   --afk-blue: #3b6cff;
   --afk-blue-soft: #7aa2ff;
   --afk-ink: #040507;
@@ -64,14 +64,6 @@ body {
 .afk-content {
   position: relative;
   z-index: 1;
-}
-
-.afk-hero {
-  position: relative;
-  padding: 5.5rem 1.5rem 6rem;
-  display: grid;
-  gap: 2.5rem;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .afk-title {
@@ -151,21 +143,4 @@ body {
   height: 1px;
   background: linear-gradient(90deg, rgba(122, 162, 255, 0) 0%, rgba(122, 162, 255, 0.8) 50%, rgba(122, 162, 255, 0) 100%);
   margin: 2.5rem 0;
-}
-
-@media (max-width: 1024px) {
-  .afk-hero {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 640px) {
-  .afk-hero {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    padding: 4.5rem 1.25rem 4rem;
-  }
-
-  .afk-section-title {
-    font-size: 1.6rem;
-  }
 }

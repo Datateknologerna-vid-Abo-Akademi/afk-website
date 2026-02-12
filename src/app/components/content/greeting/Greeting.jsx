@@ -8,7 +8,7 @@ const Greeting = () => {
             <div className="flex items-center justify-center gap-48">
                 <div className="ml-10 flex flex-col justify-center">
                     { /* <div className="afk-pill">Recruitment Fair</div> */ }
-                    <div className="mx-auto flex flex-col justify-center gap-3">
+                    <div className="flex flex-col justify-center gap-3">
                         <h1 className="afk-title text-6xl lg:text-7xl">
                             AFK 2026
                         </h1>
@@ -18,9 +18,9 @@ const Greeting = () => {
                         <p className="text-blue-100 max-w-xl">
                         Meet the companies, attend insightful keynotes and presentations, and close the day with a relaxing sauna evening.
                         </p>
-                        <div className="flex items-center gap-4">
+                        <div className="flex items-center">
                             <button
-                                className="afk-pill hover:bg-blue-500/80 transition-colors duration-300"
+                                className="afk-pill hover:bg-blue-500/80 mt-3 transition-colors duration-300"
                                 onClick={() => {
                                     document
                                         .getElementById("contact")

@@ -32,12 +32,12 @@ const About = () => {
                 <br />
                 <Image src="/images/afk24-crowd.jpg" alt="AFK crowd" height={1063} width={1600} className="w-full py-1 rounded-md"/>
                 <br />
-                <h2 className="mb-1 text-lg font-semibold text-blue-100 md:hidden">{imageLeftTitle}</h2>
+                <h2 className="mb-1 text-xl font-semibold text-blue-100 md:hidden">{imageLeftTitle}</h2>
                 <p className="text-blue-100 leading-relaxed">{imageLeftText}</p>
                 <br />
                 <Image src="/images/afk24-presentation.jpg" alt="AFK presentation" height={1063} width={1600} className="w-full py-1 rounded-md"/>
                 <br />
-                <h2 className="mb-1 text-lg font-semibold text-blue-100 md:hidden">{imageRightTitle}</h2>
+                <h2 className="mb-1 text-xl font-semibold text-blue-100 md:hidden">{imageRightTitle}</h2>
                 <p className="text-blue-100 leading-relaxed">{imageRightText}</p>
             </div>
         </div>
