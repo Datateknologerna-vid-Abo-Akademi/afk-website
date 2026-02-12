@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { useState, useEffect } from "react";
 
 /**
  * Single company component, used in the list of companies and for the selected company. Contains the logo and name of the company, and when selected, also the description and feedback.
@@ -12,12 +11,10 @@ import { useState, useEffect } from "react";
  */
 
 const Company = (props) => {
-    const [hover, setHover] = useState(false);
-
     return (
         <div
             className={
-                "bg-primary rounded-lg p-2 h-56 m-1 flex items-center justify-center cursor-pointer transition duration-300 ease-in-out hover:bg-secondary"
+                "rounded-lg p-4 h-56 m-1 flex items-center justify-center cursor-pointer transition duration-300 ease-in-out hover:scale-[1.02] hover:bg-participant"
             }
             id="company"
             onClick={() => props.handleClick(props.company)}
@@ -27,7 +24,7 @@ const Company = (props) => {
                 alt={props.company.name + " logo"}
                 height={100}
                 width={200}
-                className=""
+                className="object-contain"
             />
         </div>
     );
@@ -41,12 +38,12 @@ const Company = (props) => {
 
 const SelectedCompany = (props) => {
     return (
-        <div className={"bg-primary rounded-lg w-full min-h-full"} id="company">
-            <div className="p-4">
-                <h1 className="text-2xl">{props.company.name}</h1>
-                <div className="text-lg mb-3">{props.company.description}</div>
+        <div className={"afk-card w-full min-h-full"} id="company">
+            <div className="p-6">
+                <h1 className="afk-title text-3xl mb-3">{props.company.name}</h1>
+                <div className="text-blue-100 leading-relaxed mb-4">{props.company.description}</div>
                 {props.company.feedback ? (
-                    <div className="text-lg">
+                    <div className="text-blue-200 italic">
                         {'"' + props.company.feedback + '"'}
                     </div>
                 ) : null}

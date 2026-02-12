@@ -3,8 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --scrollbar-thumb: #777777;
-  --scrollbar-track: #d0d0d0;
+  --scrollbar-thumb: #3b6cff;
+  --scrollbar-track: #1d1d1d;
+  --afk-blue: #3b6cff;
+  --afk-blue-soft: #7aa2ff;
+  --afk-ink: #040507;
+  --afk-ink-2: #0b0e14;
+  --afk-paper: #e9f0ff;
+  --afk-muted: #b7c5e6;
 }
 
 * {
@@ -13,4 +19,128 @@
   box-sizing: border-box;
   scrollbar-width: thin;
   scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+body {
+  background-color: var(--afk-ink);
+  color: var(--afk-paper);
+  font-family: "Chakra Petch", "Josefin Sans", sans-serif;
+  min-height: 100vh;
+}
+
+.afk-body {
+  background-color: var(--afk-ink);
+}
+
+.afk-site {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--afk-ink);
+  overflow-x: hidden;
+}
+
+.afk-site::before {
+  content: "";
+  position: fixed;
+  inset: -20% -10% -10% -10%;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'><rect width='240' height='240' fill='%23040507'/><g fill='%2392a2c7' fill-opacity='0.25' font-family='Chakra%20Petch,monospace' font-size='16'><text x='12' y='24'>0100101001</text><text x='12' y='56'>1010010110</text><text x='12' y='88'>0101101001</text><text x='12' y='120'>1100100101</text><text x='12' y='152'>0010110100</text><text x='12' y='184'>1010010101</text><text x='12' y='216'>0101100100</text></g></svg>");
+  opacity: 0.55;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.afk-site::after {
+  content: "";
+  position: fixed;
+  inset: -15% -10% -10% -10%;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='900' height='900' viewBox='0 0 900 900'><rect width='900' height='900' fill='none'/><g fill='none' stroke='%233b6cff' stroke-opacity='0.9' stroke-width='2'><path d='M40 180 C180 80 320 80 460 180 S740 280 880 180'/><path d='M20 220 C180 120 320 120 480 220 S760 320 900 220'/><path d='M40 260 C200 160 340 160 520 260 S780 360 900 260'/><path d='M40 600 C180 500 320 500 460 600 S740 700 880 600'/><path d='M20 640 C180 540 320 540 480 640 S760 740 900 640'/><path d='M40 680 C200 580 340 580 520 680 S780 780 900 680'/></g></svg>");
+  background-repeat: repeat;
+  opacity: 0.7;
+  z-index: 0;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.afk-content {
+  position: relative;
+  z-index: 1;
+}
+
+.afk-title {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.afk-outline {
+  color: transparent;
+  -webkit-text-stroke: 3px var(--afk-paper);
+}
+
+.afk-card {
+  background: rgba(6, 8, 12, 0.86);
+  border: 1px solid rgba(78, 116, 255, 0.45);
+  border-radius: 28px;
+  padding: 1.75rem;
+  box-shadow: 0 25px 60px rgba(2, 5, 18, 0.55);
+  backdrop-filter: blur(8px);
+}
+
+.afk-orb {
+  position: relative;
+  border-radius: 999px;
+  background: rgba(22, 27, 40, 0.85);
+  border: 1px solid rgba(78, 116, 255, 0.45);
+  box-shadow: inset 0 0 40px rgba(20, 30, 60, 0.4), 0 25px 60px rgba(2, 5, 18, 0.6);
+}
+
+.afk-orb::after {
+  content: "";
+  position: absolute;
+  inset: 18% 18% auto auto;
+  width: 30%;
+  height: 30%;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  filter: blur(6px);
+}
+
+.afk-section-title {
+  /*font-size: 2rem;*/
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.afk-section-subtitle {
+  /*font-size: 1.1rem;*/
+  color: var(--afk-muted);
+}
+
+.afk-link {
+  color: var(--afk-blue-soft);
+  text-decoration: none;
+}
+
+.afk-link:hover {
+  color: var(--afk-paper);
+}
+
+.afk-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(122, 162, 255, 0.6);
+  color: var(--afk-paper);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.afk-divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(122, 162, 255, 0) 0%, rgba(122, 162, 255, 0.8) 50%, rgba(122, 162, 255, 0) 100%);
+  margin: 2.5rem 0;
 }

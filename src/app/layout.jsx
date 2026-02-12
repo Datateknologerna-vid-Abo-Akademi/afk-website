@@ -6,7 +6,7 @@ export default function RootLayout({ children }) {
             <head>
                 <meta charSet="UTF-8" />
                 <title>AFK 2026</title>
-                <link rel="icon" href="/images/AFK_logo_small.png" />
+                <link rel="icon" href="/images/logos/afk-favicon-full.png" />
                 <meta
                     name="viewport"
                     content="width=device-width,initial-scale=1, viewport-fit=cover"
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
                     rel="stylesheet"
                 />
             </head>
-            <body className="bg-gray-800">{children}</body>
+            <body className="afk-body">{children}</body>
         </html>
     );
 }

@@ -1,18 +1,40 @@
 import Image from "next/image";
+import Countdown from "@/app/components/ui/Countdown";
+
+const eventDate = new Date("2026-11-27T11:00:00");
 
 const GreetingMobile = () => {
     return (
-        <div className="bg-primary h-fit relative w-full mb-10 mt-5 animate-appear" id="welcome-text">
-            <div className="flex items-center justify-center">
-                <div className="flex items-center justify-center">
-                    <Image src="/images/AFK_logo.png" alt="Welcome" width={375} height={375} className="p-5" />
+        <section className="px-6 pt-8 pb-10 m-auto flex flex-col items-center animate-appear" id="welcome-text">
+            <Image
+                src="/images/logos/AFK_LOGO.png"
+                alt="AFK logo"
+                height={300}
+                width={300}
+                className="m-auto pb-10"
+            />
+            <div className="flex m-auto justify-center items-center text-center text-2xl">
+                <div className="flex flex-col items-center text-blue-100 gap-4">
+                    <h1 className="afk-title text-5xl">AFK 2026</h1>
+                    <p className="text-xl font-extrabold max-w-xl">
+                        November 27th, 2026 @ Aurum, Turku
+                    </p>
+                    <Countdown targetDate={eventDate} /> 
+                    <div className="flex items-center">
+                        <button
+                            className="afk-pill text-lg bg-blue-900/80 mt-3 transition-colors duration-300"
+                            onClick={() => {
+                                document
+                                    .getElementById("contact")
+                                    .scrollIntoView({ behavior: "smooth" });
+                            }}
+                        >
+                            Attend AFK
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div className="text-center relative flex justify-center items-center flex-col text-gray-200 font-bold [text-shadow:-1px_-1px_0_black,1px_-1px_0_black,-1px_1px_0_black,1px_1px_0_black]">
-                <h1 className="text-4xl">Welcome to AFK 2026</h1>
-                <h2 className="text-2xl">November 27th @ Aurum, Turku</h2>
-            </div>
-        </div>
+        </section>
     )
 }
 

@@ -1,28 +1,56 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import Countdown from "@/app/components/ui/Countdown";
+
+const eventDate = new Date("2026-11-27T11:00:00");
 
 const Greeting = () => {
     return (
-        <div className="relative w-full" id="welcome-text">
-            {/*Image overlay*/}
-            <div className="absolute inset-0 bg-black opacity-40"></div>
-            {/*Image*/}
-            <Image
-                src="/images/banner.jpg"
-                alt="Welcome to AFK"
-                height={1063}
-                width={1600}
-                className="w-full"
-            />
-            {/*Text over image*/}
-            <div className="text-4xl text-center absolute inset-0 flex justify-center items-center flex-col text-gray-200 font-bold [text-shadow:-1px_-1px_0_black,1px_-1px_0_black,-1px_1px_0_black,1px_1px_0_black]">
-                <div className="text-4xl mb-4">Welcome to</div>
-                <h1 className="text-8xl">AFK 2026</h1>
-                <br />
-                <h2 className="text-4xl">November 27th, 2026</h2>
-                <h3 className="text-4xl">At Aurum, Turku</h3>
+        <section className="w-full my-16" id="welcome-text">
+            <div className="flex items-center justify-center gap-40">
+                <div className="ml-10 flex flex-col justify-center">
+                    { /* <div className="afk-pill">Recruitment Fair</div> */ }
+                    <div className="flex flex-col justify-center gap-3">
+                        <h1 className="afk-title text-6xl">
+                            AFK 2026
+                        </h1>
+                        <p className="text-blue-100 text-xl max-w-xl">
+                        Meet the companies, attend insightful keynotes and presentations, and close the day with a relaxing sauna evening.
+                        </p>
+                    </div>
+                </div>
+                <div className="flex">
+                    <Image
+                        src="/images/logos/AFK_LOGO.png"
+                        alt="AFK logo"
+                        height={300}
+                        width={300}
+                        className="m-auto"
+                    />
+                </div>
             </div>
-        </div>
+            <div className="flex m-auto mt-6 justify-center text-2xl">
+                <div className="flex flex-col items-center text-blue-100 gap-4">
+                    <p className="text-2xl font-extrabold max-w-xl">
+                        November 27th, 2026 @ Aurum, Turku
+                    </p>
+                    <Countdown targetDate={eventDate} /> 
+                    <div className="flex items-center">
+                        <button
+                            className="afk-pill text-lg hover:bg-blue-500/80 mt-3 transition-colors duration-300"
+                            onClick={() => {
+                                document
+                                    .getElementById("contact")
+                                    .scrollIntoView({ behavior: "smooth" });
+                            }}
+                        >
+                            Attend AFK
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     );
 };
 
