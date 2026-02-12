@@ -53,7 +53,7 @@ body {
   content: "";
   position: fixed;
   inset: -15% -10% -10% -10%;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='900' height='900' viewBox='0 0 900 900'><rect width='900' height='900' fill='none'/><g fill='none' stroke='%233b6cff' stroke-opacity='0.9' stroke-width='2'><path d='M40 180 C180 80 320 80 460 180 S740 280 880 180'/><path d='M20 220 C180 120 320 120 480 220 S760 320 900 220'/><path d='M40 260 C200 160 340 160 520 260 S780 360 900 260'/><path d='M40 600 C180 500 320 500 460 600 S740 700 880 600'/><path d='M20 640 C180 540 320 540 480 640 S760 740 900 640'/><path d='M40 680 C200 580 340 580 520 680 S780 780 900 680'/></g></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='900' height='900' viewBox='0 0 900 900'><rect width='900' height='900' fill='none'/><g fill='none' stroke='%233b6cff' stroke-opacity='0.9' stroke-width='2'><path d='M0 180 C180 80 320 80 460 180 S720 280 900 180'/><path d='M0 220 C180 120 320 120 480 220 S720 320 900 220'/><path d='M0 260 C200 160 340 160 520 260 S700 360 900 260'/><path d='M0 600 C180 500 320 500 460 600 S720 700 900 600'/><path d='M0 640 C180 540 320 540 480 640 S720 740 900 640'/><path d='M0 680 C200 580 340 580 520 680 S700 780 900 680'/></g></svg>");
   background-repeat: repeat;
   opacity: 0.7;
   z-index: 0;
