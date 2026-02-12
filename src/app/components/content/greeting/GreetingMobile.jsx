@@ -1,4 +1,7 @@
 import Image from "next/image";
+import Countdown from "@/app/components/ui/Countdown";
+
+const eventDate = new Date("2026-11-27T11:00:00");
 
 const GreetingMobile = () => {
     return (
@@ -10,19 +13,27 @@ const GreetingMobile = () => {
                 width={300}
                 className="m-auto pb-10"
             />
-            <h1 className="afk-title text-5xl">AFK 2026</h1>
-            <p className="text-blue-100 text-center mt-3">November 27th, 2026 @ Aurum, Turku</p>
-            <p className="text-blue-100 text-center mt-3">Meet the companies, dive into talks, and end the day with our sauna evening.</p>
-            <button
-                className="afk-pill mt-6"
-                onClick={() => {
-                    document
-                        .getElementById("contact")
-                        .scrollIntoView({ behavior: "smooth" });
-                }}
-            >
-                Attend AFK
-            </button>
+            <div className="flex m-auto justify-center items-center text-center text-2xl">
+                <div className="flex flex-col items-center text-blue-100 gap-4">
+                    <h1 className="afk-title text-5xl">AFK 2026</h1>
+                    <p className="text-xl font-extrabold max-w-xl">
+                        November 27th, 2026 @ Aurum, Turku
+                    </p>
+                    <Countdown targetDate={eventDate} /> 
+                    <div className="flex items-center">
+                        <button
+                            className="afk-pill text-lg bg-blue-900/80 mt-3 transition-colors duration-300"
+                            onClick={() => {
+                                document
+                                    .getElementById("contact")
+                                    .scrollIntoView({ behavior: "smooth" });
+                            }}
+                        >
+                            Attend AFK
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
     )
 }
