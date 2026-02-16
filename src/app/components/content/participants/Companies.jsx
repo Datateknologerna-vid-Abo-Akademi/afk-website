@@ -42,7 +42,7 @@ const Companies = () => {
                 </div>
                 {/* Back Button (Only visible when a company is selected) */}
                 {selectedCompany && (
-                    <button onClick={handleBack} className="absolute top-3 right-3 border border-blue-500/60 text-blue-100 z-10 px-3 py-2 rounded-full transition-all delay-150 hover:bg-red-600/70 text-xs uppercase">
+                    <button onClick={handleBack} className="absolute top-3 right-3 border border-blue-500/60 z-10 px-3 py-2 rounded-full transition-all delay-150 hover:bg-red-600/70 text-xs uppercase">
                         x
                     </button>
                 )}

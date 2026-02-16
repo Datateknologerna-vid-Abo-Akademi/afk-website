@@ -13,7 +13,7 @@ import InfoFair from "../components/content/event-info/InfoFair";
 
 const Content = () => {
     return (
-        <div className="text-white sm:pt-16 pt-2" id="content">
+        <div className="sm:pt-16 pt-2" id="content">
             <div className="lg:flex hidden">
                 <Greeting />
             </div>

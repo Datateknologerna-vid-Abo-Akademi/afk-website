@@ -12,10 +12,10 @@ const Greeting = () => {
                 <div className="ml-10 flex flex-col justify-center">
                     { /* <div className="afk-pill">Recruitment Fair</div> */ }
                     <div className="flex flex-col justify-center gap-3">
-                        <h1 className="afk-title text-6xl">
+                        <h1 className="afk-title text-white text-6xl">
                             AFK 2026
                         </h1>
-                        <p className="text-blue-100 text-xl max-w-xl">
+                        <p className="text-xl max-w-xl">
                         Meet the companies, attend insightful keynotes and presentations, and close the day with a relaxing sauna evening.
                         </p>
                     </div>
@@ -31,14 +31,14 @@ const Greeting = () => {
                 </div>
             </div>
             <div className="flex m-auto mt-6 justify-center text-2xl">
-                <div className="flex flex-col items-center text-blue-100 gap-4">
+                <div className="flex flex-col items-center gap-4">
                     <p className="text-2xl font-extrabold max-w-xl">
                         November 27th, 2026 @ Aurum, Turku
                     </p>
                     <Countdown targetDate={eventDate} /> 
                     <div className="flex items-center">
                         <button
-                            className="afk-pill text-lg hover:bg-blue-500/80 mt-3 transition-colors duration-300"
+                            className="afk-pill text-xl hover:bg-blue-500/80 mt-3 transition-colors duration-300"
                             onClick={() => {
                                 document
                                     .getElementById("contact")
