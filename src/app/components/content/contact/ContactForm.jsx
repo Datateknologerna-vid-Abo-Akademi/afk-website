@@ -57,42 +57,42 @@ const ContactForm = () => {
     return (
         <div className="afk-card mx-auto max-w-3xl">
             <form className="md:px-10 py-5 flex flex-col" onSubmit={sendEmail}>
-                <h1 className="afk-section-title afk-title text-xl">Contact Form</h1>
-                <p className="mb-4 text-blue-100">Fields marked with <span className="text-red-400">*</span> are mandatory, the rest can be left empty.</p>
+                <h1 className="afk-section-title afk-title text-white text-xl">Contact Form</h1>
+                <p className="mb-4 ">Fields marked with <span className="text-red-400">*</span> are mandatory, the rest can be left empty.</p>
                 <div className="mb-3">
-                    <label className="text-blue-100">Name: <span className="text-red-400">*</span></label>
+                    <label>Name: <span className="text-red-400">*</span></label>
                     <div className="bg-black/60 rounded-md border border-blue-500/30 flex flex-col">
-                        <input className="mx-3 py-2 bg-transparent text-blue-100 placeholder:text-blue-200/60 focus:outline-none" type="text" name="from_name" placeholder="Matti Meikäläinen" required />
+                        <input className="mx-3 py-2 bg-transparent placeholder:text-blue-200/60 focus:outline-none" type="text" name="from_name" placeholder="Matti Meikäläinen" required />
                     </div>
                 </div>
                 <div className="mb-3">
-                    <label className="text-blue-100">Company: <span className="text-red-400">*</span></label>
+                    <label>Company: <span className="text-red-400">*</span></label>
                     <div className="bg-black/60 rounded-md border border-blue-500/30 flex flex-col">
-                        <input className="mx-3 py-2 bg-transparent text-blue-100 placeholder:text-blue-200/60 focus:outline-none" type="text" name="company_name" placeholder="Company Oy" required />
+                        <input className="mx-3 py-2 bg-transparent placeholder:text-blue-200/60 focus:outline-none" type="text" name="company_name" placeholder="Company Oy" required />
                     </div>
                 </div>
                 <div className="mb-3">
-                    <label className="text-blue-100">Email: <span className="text-red-400">*</span></label>
+                    <label>Email: <span className="text-red-400">*</span></label>
                     <div className="bg-black/60 rounded-md border border-blue-500/30 flex flex-col">
-                        <input className="mx-3 py-2 bg-transparent text-blue-100 placeholder:text-blue-200/60 focus:outline-none" type="email" name="from_email" placeholder="placeholder@company.com" required />
+                        <input className="mx-3 py-2 bg-transparent placeholder:text-blue-200/60 focus:outline-none" type="email" name="from_email" placeholder="placeholder@company.com" required />
                     </div>
                 </div>
                 <div className="mb-3">
-                    <label className="text-blue-100">What are you interested in: </label>
+                    <label>What are you interested in: </label>
                     <div className="bg-black/60 rounded-md border border-blue-500/30 flex flex-col">
-                        <input className="mx-3 py-2 bg-transparent text-blue-100 placeholder:text-blue-200/60 focus:outline-none" type="text" name="options" placeholder="e.g. a stand, readme and presentation" />
+                        <input className="mx-3 py-2 bg-transparent placeholder:text-blue-200/60 focus:outline-none" type="text" name="options" placeholder="e.g. a stand, readme and presentation" />
                     </div>
                 </div>
                 <div className="mb-4">
-                    <label className="text-blue-100">Message <span className="italic text-sm">(max 2000 characters)</span></label>
+                    <label>Message <span className="italic text-sm">(max 2000 characters)</span></label>
                     <div className="bg-black/60 rounded-md border border-blue-500/30 flex flex-col">
-                        <textarea className="mx-3 py-2 bg-transparent text-blue-100 placeholder:text-blue-200/60 focus:outline-none min-h-24" name="message" maxLength={2000} />
+                        <textarea className="mx-3 py-2 bg-transparent placeholder:text-blue-200/60 focus:outline-none min-h-24" name="message" maxLength={2000} />
                     </div>
                 </div>
                 {isClient && (
                     <div className="cf-turnstile" data-sitekey="0x4AAAAAAA9l0AlYgV9onEKD"></div>
                 )}
-                <div className="cursor-pointer w-fit transition duration-150 ease-in-out border border-blue-500/60 rounded-full px-6 py-2 flex items-center justify-center uppercase tracking-[0.2em] text-blue-100 hover:bg-blue-600/30">
+                <div className="cursor-pointer w-fit transition duration-150 ease-in-out border border-blue-500/60 rounded-full px-6 py-2 flex items-center justify-center uppercase tracking-[0.2em] hover:bg-blue-600/30">
                     <input type="submit" value="Send" className="cursor-pointer" disabled={isSubmitting} />
                 </div>
                 {messageState && (

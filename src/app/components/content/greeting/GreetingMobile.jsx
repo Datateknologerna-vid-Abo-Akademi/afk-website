@@ -14,7 +14,7 @@ const GreetingMobile = () => {
                 className="m-auto pb-10"
             />
             <div className="flex m-auto justify-center items-center text-center text-2xl">
-                <div className="flex flex-col items-center text-blue-100 gap-4">
+                <div className="flex flex-col items-center gap-4">
                     <h1 className="afk-title text-5xl">AFK 2026</h1>
                     <p className="text-xl font-extrabold max-w-xl">
                         November 27th, 2026 @ Aurum, Turku

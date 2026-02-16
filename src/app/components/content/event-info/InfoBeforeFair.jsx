@@ -5,8 +5,8 @@ import ButtonLink from "@/app/components/ui/ButtonLink";
 const InfoBeforeFair = () => {
     return (
         <div id="event-info">
-            <h1 className="afk-section-title afk-title text-2xl">AFK 2026 Information</h1>
-            <p className="text-blue-100 leading-relaxed">
+            <h1 className="afk-section-title afk-title text-white text-2xl">AFK 2026 Information</h1>
+            <p className="leading-relaxed">
                 AFK 2026 will be held on Friday 27th of November 2026. The day
                 begins with the recruitment fair itself, where all companies
                 will be able to present themselves and their work to students.
@@ -15,7 +15,7 @@ const InfoBeforeFair = () => {
                 presentations during the fair.
             </p>
             <br />
-            <p className="text-blue-100 leading-relaxed">
+            <p className="leading-relaxed">
                 The fair will be hosted at Aurum, a state-of-the-art building on
                 our student campus and the primary hub for the Faculty of
                 Science and Engineering. This gives your company exposure to not
@@ -23,19 +23,19 @@ const InfoBeforeFair = () => {
                 within the faculty.
             </p>
             <br />
-            <h2 className="mb-2 text-xl font-semibold text-blue-100">
+            <h2 className="mb-2 text-xl text-white font-semibold">
                 Pricing for the year 2026 will be as follows:
             </h2>
-            <ul className="list-disc list-inside text-blue-100">
+            <ul className="list-disc list-inside">
                 <li className="font-semibold text-lg italic">Stand at the fair 700 EUR</li>
-                <ul className="list-disc list-inside text-blue-100">
+                <ul className="list-disc list-inside">
                     <li className="mb-3 ml-5 list-['- ']">
                         A stand for your company at the fair equipped with a
                         table, chair, and power outlets.
                     </li>
                 </ul>
                 <li className="font-semibold text-lg italic">Company presentation 500 EUR</li>
-                <ul className="list-disc list-inside text-blue-100">
+                <ul className="list-disc list-inside">
                     <li className="mb-3 ml-5 list-['- ']">
                         A 45-minute time slot in one of our lecture halls. 30
                         minutes for a presentation and 15 minutes for questions.
@@ -45,7 +45,7 @@ const InfoBeforeFair = () => {
                 <li className="font-semibold text-lg italic">
                     Hackathon/coding workshop sponsor 400 EUR
                 </li>
-                <ul className="list-disc list-inside text-blue-100">
+                <ul className="list-disc list-inside">
                     <li className="mb-2 ml-5 list-['- ']">
                         Be the company to sponsor our hackathon! Design a
                         hackathon or coding workshop for participants of the
@@ -64,12 +64,12 @@ const InfoBeforeFair = () => {
                 </ul>
             </ul>
             <br />
-            <h2 className="mb-2 text-xl font-semibold text-blue-100">
+            <h2 className="mb-2 text-xl text-white font-semibold">
                 Included for free with attendance:
             </h2>
-            <ul className="list-disc list-inside text-blue-100">
+            <ul className="list-disc list-inside">
                 <li className="font-semibold text-lg italic">README.afk page</li>
-                <ul className="list-disc list-inside text-blue-100">
+                <ul className="list-disc list-inside">
                     <li className="mb-3 ml-5 list-['- ']">
                         A page (A5 size) in our information leaflet that will be
                         available for free at the fair in both digital and
@@ -77,7 +77,7 @@ const InfoBeforeFair = () => {
                     </li>
                 </ul>
                 <li className="font-semibold text-lg italic">Company on the AFK website</li>
-                <ul className="list-disc list-inside text-blue-100">
+                <ul className="list-disc list-inside">
                     <li className="mb-3 ml-5 list-['- ']">
                         Your company's logo and a short presentation will be
                         featured on the AFK website as a participating company
@@ -87,8 +87,8 @@ const InfoBeforeFair = () => {
                 </ul>
             </ul>
             <br />
-            <h2 className="mb-2 text-xl font-semibold text-blue-100">Previous AFK Leaflets:</h2>
-            <p className="text-blue-100"> The event leaflets from previous years can be found below!</p>
+            <h2 className="mb-2 text-xl text-white font-semibold">Previous AFK Leaflets:</h2>
+            <p className="leading-relaxed"> The event leaflets from previous years can be found below!</p>
             <div className="flex flex-col sm:flex-row gap-4 my-4">
                 <ButtonLink
                     link="https://fra1.digitaloceanspaces.com/albin-storage/date/public/2023/events/readme_afk-1.pdf"
@@ -100,7 +100,7 @@ const InfoBeforeFair = () => {
                 />
             </div>
             <br />
-            <p className="text-blue-100 leading-relaxed">
+            <p className="leading-relaxed">
                 If you are interested in attending AFK, or if you have any
                 questions, don't hesitate in reaching out and{" "}
                 <span className="font-bold italic">contacting us</span>. Our
@@ -110,7 +110,7 @@ const InfoBeforeFair = () => {
                 </span>
             </p>
             <br />
-            <p className="text-xl font-semibold italic text-blue-100">
+            <p className="text-xl text-white font-semibold italic">
                 We hope to see you at AFK 2026!
             </p>
             <br />
