@@ -1,5 +1,9 @@
+"use client"
 import Image from "next/image";
-import Countdown from "@/app/components/ui/Countdown";
+import dynamic from "next/dynamic";
+
+// Render Countdown client-side only to prevent hydration issues
+const Countdown = dynamic(() => import("@/app/components/ui/Countdown"), { ssr: false });
 
 const eventDate = new Date("2026-11-27T11:00:00");
 
