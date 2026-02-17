@@ -23,7 +23,7 @@ const Footer = () => {
                         means:
                     </p>
                     <br />
-                    <p>Email: afk[at]abo.fi</p>
+                    <p>Email: afk@abo.fi</p>
                     <br />
                     <p>
                         Address: <br />

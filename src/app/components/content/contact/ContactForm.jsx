@@ -9,6 +9,13 @@ const ContactForm = () => {
 
     useEffect(() => {
         setIsClient(true);
+
+        // Avoid loading the script multiple times if the component is unmounted and remounted
+        const exisiting = document.querySelector('script[src="https://challenges.cloudflare.com/turnstile/v0/api.js"]');
+        if (exisiting) {
+            return;
+        }
+
         const script = document.createElement("script");
         script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
         script.async = true;
@@ -16,42 +23,57 @@ const ContactForm = () => {
         document.body.appendChild(script);
     }, []);
 
-    const sendEmail = (e) => {
-        e.persist();
+    const resetTurnstile = () => {
+        if (window.turnstile) {
+            window.turnstile.reset();
+        }        
+    }
+
+    const sendEmail = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
+        setMessageState(null);
 
-        fetch("https://contactapi.afk-fair.com/contact", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                name: e.target.elements.from_name.value,
-                company: e.target.elements.company_name.value,
-                email: e.target.elements.from_email.value,
-                options: e.target.elements.options.value,
-                message: e.target.elements.message.value,
-                "cf-turnstile-response": e.target.elements["cf-turnstile-response"].value
-            })
-        })
-        .then((response) => {
-            if (response.ok) {
-                return response.json();
+        try {
+            const token = e.target.elements["cf-turnstile-response"].value;
+            if (!token) {
+                setMessageState("Clouflare verification failed.");
+                setIsSubmitting(false);
+                return;
             }
-            throw new Error("Network response was not ok.");
-        })
-        .then((data) => {
+            
+            const response = await fetch("https://contactapi.afk-fair.com/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    name: e.target.elements.from_name.value,
+                    company: e.target.elements.company_name.value,
+                    email: e.target.elements.from_email.value,
+                    options: e.target.elements.options.value,
+                    message: e.target.elements.message.value,
+                    "cf-turnstile-response": e.target.elements["cf-turnstile-response"].value
+                }),
+            });
+
+            if (!response.ok) throw new Error("Network response was not ok.");
+
+            // Assure the response is fully read before updating the state
+            await response.json();
             setMessageState("Message Sent!");
+
+            e.target.reset();
+            resetTurnstile();
             setIsSubmitting(false);
+
             setTimeout(() => {
                 setMessageState(null);
-            }
-            , 5000);
-        });
-
-        // Clear the form
-        e.target.reset();
+            }, 5000);
+        } catch (error) {
+            setMessageState("Error sending message.");
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -80,7 +102,7 @@ const ContactForm = () => {
                 <div className="mb-3">
                     <label>What are you interested in: </label>
                     <div className="bg-black/60 rounded-md border border-blue-500/30 flex flex-col">
-                        <input className="mx-3 py-2 bg-transparent placeholder:text-blue-200/60 focus:outline-none" type="text" name="options" placeholder="e.g. a stand, readme and presentation" />
+                        <input className="mx-3 py-2 bg-transparent placeholder:text-blue-200/60 focus:outline-none" type="text" name="options" placeholder="e.g. a stand, presentation, and hackathon" />
                     </div>
                 </div>
                 <div className="mb-4">
