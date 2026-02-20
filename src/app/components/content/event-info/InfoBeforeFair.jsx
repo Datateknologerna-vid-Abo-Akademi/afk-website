@@ -5,7 +5,9 @@ import ButtonLink from "@/app/components/ui/ButtonLink";
 const InfoBeforeFair = () => {
     return (
         <div id="event-info">
-            <h1 className="afk-section-title afk-title text-white text-2xl">AFK 2026 Information</h1>
+            <h1 className="afk-section-title afk-title text-white text-2xl">
+                AFK 2026 Information
+            </h1>
             <p className="leading-relaxed">
                 AFK 2026 will be held on Friday 27th of November 2026. The day
                 begins with the recruitment fair itself, where all companies
@@ -27,14 +29,22 @@ const InfoBeforeFair = () => {
                 Pricing for the year 2026 will be as follows:
             </h2>
             <ul className="list-disc list-inside">
-                <li className="font-semibold text-lg italic">Stand at the fair 700 EUR</li>
+                <li className="font-semibold text-lg italic">
+                    Stand at the fair
+                    <span className="font-semibold text-blue-500"> - </span>
+                    700 EUR
+                </li>
                 <ul className="list-disc list-inside">
                     <li className="mb-3 ml-5 list-['- ']">
                         A stand for your company at the fair equipped with a
                         table, chair, and power outlets.
                     </li>
                 </ul>
-                <li className="font-semibold text-lg italic">Company presentation 500 EUR</li>
+                <li className="font-semibold text-lg italic">
+                    Company presentation{" "}
+                    <span className="font-semibold text-blue-500"> - </span> 
+                    500 EUR
+                </li>
                 <ul className="list-disc list-inside">
                     <li className="mb-3 ml-5 list-['- ']">
                         A 45-minute time slot in one of our lecture halls. 30
@@ -43,7 +53,10 @@ const InfoBeforeFair = () => {
                     </li>
                 </ul>
                 <li className="font-semibold text-lg italic">
-                    Hackathon/coding workshop sponsor 400 EUR
+                    Hackathon/coding workshop sponsor{" "}
+                    <span className="font-semibold text-blue-500"> - </span> 
+                    400 EUR
+EUR
                 </li>
                 <ul className="list-disc list-inside">
                     <li className="mb-2 ml-5 list-['- ']">
@@ -68,7 +81,9 @@ const InfoBeforeFair = () => {
                 Included for free with attendance:
             </h2>
             <ul className="list-disc list-inside">
-                <li className="font-semibold text-lg italic">README.afk page</li>
+                <li className="font-semibold text-lg italic">
+                    README.afk page
+                </li>
                 <ul className="list-disc list-inside">
                     <li className="mb-3 ml-5 list-['- ']">
                         A page (A5 size) in our information leaflet that will be
@@ -76,7 +91,9 @@ const InfoBeforeFair = () => {
                         physical format.
                     </li>
                 </ul>
-                <li className="font-semibold text-lg italic">Company on the AFK website</li>
+                <li className="font-semibold text-lg italic">
+                    Company on the AFK website
+                </li>
                 <ul className="list-disc list-inside">
                     <li className="mb-3 ml-5 list-['- ']">
                         Your company's logo and a short presentation will be
@@ -87,8 +104,13 @@ const InfoBeforeFair = () => {
                 </ul>
             </ul>
             <br />
-            <h2 className="mb-2 text-xl text-white font-semibold">Previous AFK Leaflets:</h2>
-            <p className="leading-relaxed"> The event leaflets from previous years can be found below!</p>
+            <h2 className="mb-2 text-xl text-white font-semibold">
+                Previous AFK Leaflets:
+            </h2>
+            <p className="leading-relaxed">
+                {" "}
+                The event leaflets from previous years can be found below!
+            </p>
             <div className="flex flex-col sm:flex-row gap-4 my-4">
                 <ButtonLink
                     link="https://fra1.digitaloceanspaces.com/albin-storage/date/public/2023/events/readme_afk-1.pdf"
