@@ -1,6 +1,6 @@
 import React from "react";
-import { Company, SelectedCompany } from "./SingleCompany";
-import participants from "@/app/json/companies.json";
+import { Company, SelectedCompany } from "./SelectedCompany";
+import participants from "@/app/json/test-companies.json";
 import { useState, useEffect } from "react";
 
 /**
@@ -54,8 +54,6 @@ const Companies = () => {
                     ))}
                 </div>
             </div>
-
-
         </div>
     );
 }

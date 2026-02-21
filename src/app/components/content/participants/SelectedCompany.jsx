@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "@/app/components/ui/Link";
 
 /**
  * Single company component, used in the list of companies and for the selected company. Contains the logo and name of the company, and when selected, also the description and feedback.
@@ -40,8 +41,38 @@ const SelectedCompany = (props) => {
     return (
         <div className={"afk-card w-full min-h-full"} id="company">
             <div className="p-6">
-                <h1 className="afk-title text-3xl mb-3">{props.company.name}</h1>
-                <div className="leading-relaxed mb-4">{props.company.description}</div>
+                <h1 className="afk-title text-white text-3xl mb-3">
+                    {props.company.name}
+                </h1>
+                <div className="grid grid-cols-4 gap-10">
+                    <div className="grid col-span-3">
+                        <div className="flex flex-col leading-relaxed gap-4">
+                            {props.company.description.map((desc, index) => (
+                                <div key={index}>
+                                    <p>{desc.text}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <div className="grid col-span-1">
+                        <Image
+                            src={props.company.logo}
+                            alt={props.company.name + " logo"}
+                            height={1000}
+                            width={1000}
+                            className="object-contain"
+                        />
+                    </div>
+                </div>
+                <div className="leading-relaxed mt-4">
+                    <p>
+                        Read more on their website:{" "}
+                        <Link
+                            name={props.company.linkname}
+                            link={props.company.linkurl}
+                        />
+                    </p>
+                </div>
                 {props.company.feedback ? (
                     <div className="text-blue-200 italic">
                         {'"' + props.company.feedback + '"'}
