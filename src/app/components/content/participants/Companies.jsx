@@ -34,10 +34,10 @@ const Companies = () => {
     return (
         <div className="relative w-full flex flex-col">
             {/* Maintain height with a wrapping div */}
-            <div className="grid grid-rows-[auto,1fr] max-h-[34rem] lg:max-h-[32rem] w-full">
+            <div className={`grid grid-rows-[auto,1fr] w-full max-h-[37rem] ${selectedCompany ? "h-[34rem]" : ""}`}>
                 
                 {/* Selected company div (Initially hidden but takes space) */}
-                <div className={`absolute top-0 left-0 right-0 bottom-0 w-full transition-all overflow-auto duration-700 ease-in-out ${selectedCompanyHidden ? "scale-y-100 origin-top" : "scale-y-0 origin-top"}`}>
+                <div className={`absolute afk-card top-0 left-0 right-0 bottom-0 w-full transition-all overflow-auto duration-700 ease-in-out ${selectedCompanyHidden ? "scale-y-100 origin-top" : "scale-y-0 origin-top"}`}>
                     {selectedCompany && <SelectedCompany company={selectedCompany} id={selectedCompany.id} />}
                 </div>
                 {/* Back Button (Only visible when a company is selected) */}
@@ -48,7 +48,7 @@ const Companies = () => {
                 )}
 
                 {/* List of companies (Hides smoothly but retains space) */}
-                <div className={`relative grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-4 overflow-y-auto overflow-x-hidden w-full transition-all duration-700 ease-in-out ${selectedCompany ? "scale-y-0 origin-bottom overflow-hidden" : "opacity-100 visible scale-100"}`}>
+                <div className={`relative grid lg:grid-cols-4 grid-cols-1 gap-4 overflow-y-auto overflow-x-hidden w-full transition-all duration-700 ease-in-out ${selectedCompany ? "scale-y-0 origin-bottom overflow-hidden" : "opacity-100 visible scale-100"}`}>
                     {allCompanies.map((company) => (
                         <Company company={company} key={company.id} handleClick={() => handleClick(company)} />
                     ))}

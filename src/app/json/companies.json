@@ -6,8 +6,13 @@
             "description": [
                 {
                 "text": "Hibox Systems Oy Ab is a Finnish technology company specializing in advanced IPTV, OTT, and interactive TV solutions for business customers worldwide. Hibox enables telecom operators, hospitality providers, healthcare institutions, cruise lines, and enterprises to deliver seamless, high-quality video and digital experiences to their end users."
+                },
+                {
+                "text": "Building on this foundation, Hibox combines deep industry expertise with modern software development to create scalable, secure, and user-centric platforms. Their solutions are powered by contemporary frontend and backend technologies, enabling reliable performance, flexible integrations, and continuous innovation. With a strong focus on quality, collaboration, and real-world impact, Hibox delivers technology that truly matters for both its customers and end users."
                 }
             ],
+            "linkname": "www.hibox.tv",
+            "linkurl": "https://www.hibox.tv/",
             "logo": "/images/logos/hibox-white.png"
         }
     ]

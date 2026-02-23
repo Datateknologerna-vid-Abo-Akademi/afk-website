@@ -11,10 +11,11 @@ const InfoBeforeFair = () => {
             <p className="leading-relaxed">
                 AFK 2026 will be held on Friday 27th of November 2026. The day
                 begins with the recruitment fair itself, where all companies
-                will be able to present themselves and their work to students.
-                The event will be followed up by a Sauna evening at Marlibastun,
-                which is available to students that have attended at least two
-                presentations during the fair.
+                will be able to present themselves and their work to students. During the fair students will be able to attend presentations by the companies as well as visit the company stands to learn more about them and ask questions. 
+            </p>
+            <br />
+            <p className="leading-relaxed">
+                After the fair there will be a cocktail hour with drinks and snacks, where students and company representatives can mingle and network in a more informal setting. A couple hours later in the evening, there will be a more informal Sauna evening at Marlibastun, which is available to students that have attended at least two presentations during the fair as well as for company representatives that might be interestedin attending.
             </p>
             <br />
             <p className="leading-relaxed">

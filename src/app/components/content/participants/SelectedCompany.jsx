@@ -15,7 +15,7 @@ const Company = (props) => {
     return (
         <div
             className={
-                "rounded-lg p-4 h-56 m-1 flex items-center justify-center cursor-pointer transition duration-300 ease-in-out hover:scale-[1.02] hover:bg-participant"
+                "rounded-lg p-4 h-56 m-1 flex items-center justify-center lg:cursor-pointer lg:transition lg:duration-300 lg:ease-in-out lg:hover:scale-[1.02] lg:hover:bg-participant"
             }
             id="company"
             onClick={() => props.handleClick(props.company)}
@@ -39,12 +39,12 @@ const Company = (props) => {
 
 const SelectedCompany = (props) => {
     return (
-        <div className={"afk-card w-full min-h-full"} id="company">
-            <div className="p-6">
+        <div id="company">
+            <div className="lg:p-6 py-6 w-full h-full">
                 <h1 className="afk-title text-white text-3xl mb-3">
                     {props.company.name}
                 </h1>
-                <div className="grid grid-cols-4 gap-10">
+                <div className="lg:grid lg:grid-cols-4 flex gap-10">
                     <div className="grid col-span-3">
                         <div className="flex flex-col leading-relaxed gap-4">
                             {props.company.description.map((desc, index) => (
@@ -54,7 +54,7 @@ const SelectedCompany = (props) => {
                             ))}
                         </div>
                     </div>
-                    <div className="grid col-span-1">
+                    <div className="lg:grid lg:col-span-1 hidden">
                         <Image
                             src={props.company.logo}
                             alt={props.company.name + " logo"}
@@ -74,8 +74,11 @@ const SelectedCompany = (props) => {
                     </p>
                 </div>
                 {props.company.feedback ? (
-                    <div className="text-blue-200 italic">
-                        {'"' + props.company.feedback + '"'}
+                    <div className="mt-4">
+                        <p>Feedback:</p>
+                        <div className="italic text-blue-300">
+                            {'"' + props.company.feedback + '"'}
+                        </div>
                     </div>
                 ) : null}
             </div>
