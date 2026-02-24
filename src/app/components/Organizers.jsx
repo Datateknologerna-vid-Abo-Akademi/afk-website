@@ -28,7 +28,7 @@ const Organizers = () => {
                 </div>*/}
                 <div className="w-full flex flex-col justify-center">
                     <h2 className="mb-2 text-xl text-white font-semibold">The Project Group</h2>
-                    <p className="leading-relaxed">"Projektgruppen" <span className="italic">(translated as "The Project Group" in English)</span> is the elected committee responsible for organizing AFK. The group is elected by the members of Datateknologerna vid Åbo Akademi rf and is responsible for all stages of planning as well as promotion of the event. The committee is always led by the Vice Chair of the Datateknologerna board; this year, that role is held by Johnny Löfman. The other members of the Project Group are Madeleine Ringbom, Camilla Holmsträm, Felix Nygård, Julia Wentjärvi, Daniel Kass, and Hugo Söderholm.</p>
+                    <p className="leading-relaxed">"Projektgruppen" <span className="italic">(translated as "The Project Group" in English)</span> is the elected committee responsible for organizing AFK. The group is elected by the members of Datateknologerna vid Åbo Akademi rf and is responsible for all stages of planning as well as promotion of the event. The committee is always led by the Vice Chair of the Datateknologerna board; this year, that role is held by Johnny Löfman. The other members of the Project Group are Madeleine Ringbom, Camilla Holmström, Felix Nygård, Julia Wentjärvi, Daniel Kass, and Hugo Söderholm.</p>
                 </div>
                 {/*<div className="md:hidden flex items-center justify-center">
                     <Image src="/images/testing/organizers-ai.png" alt="Projektgruppen" height={1063} width={1600} className="p-1 rounded-lg mt-3"/>

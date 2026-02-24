@@ -57,7 +57,6 @@ const InfoBeforeFair = () => {
                     Hackathon/coding workshop sponsor{" "}
                     <span className="font-semibold text-blue-500"> - </span> 
                     400 EUR
-EUR
                 </li>
                 <ul className="list-disc list-inside">
                     <li className="mb-2 ml-5 list-['- ']">

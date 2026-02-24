@@ -1,6 +1,6 @@
 import React from "react";
 import { Company, SelectedCompany } from "./SelectedCompany";
-import participants from "@/app/json/test-companies.json";
+import participants from "@/app/json/companies.json";
 import { useState, useEffect } from "react";
 
 /**
@@ -12,7 +12,7 @@ const Companies = () => {
     const allCompanies = participants.companies;
     const [selectedCompany, setSelectedCompany] = useState(null);
     const [selectedCompanyDelay, setSelectedCompanyDelay] = useState(true);
-    const [selectedCompanyHidden, setSelectedCompanyHidden] = useState(true);
+    const [selectedCompanyHidden, setSelectedCompanyHidden] = useState(false);
 
 
     const handleClick = (company) => {
@@ -20,6 +20,7 @@ const Companies = () => {
     };
 
     const handleBack = () => {
+        setSelectedCompanyHidden(false);
         setSelectedCompany(null);
     };
 
@@ -37,9 +38,10 @@ const Companies = () => {
             <div className={`grid grid-rows-[auto,1fr] w-full max-h-[37rem] ${selectedCompany ? "h-[34rem]" : ""}`}>
                 
                 {/* Selected company div (Initially hidden but takes space) */}
-                <div className={`absolute afk-card top-0 left-0 right-0 bottom-0 w-full transition-all overflow-auto duration-700 ease-in-out ${selectedCompanyHidden ? "scale-y-100 origin-top" : "scale-y-0 origin-top"}`}>
+                <div className={`absolute afk-card top-0 left-0 right-0 bottom-0 w-full overflow-auto ${selectedCompany ? "transition-all duration-500 ease-in-out" : "transition-none"} ${selectedCompanyHidden ? "scale-y-100 origin-top" : "scale-y-0 origin-top"}`}>
                     {selectedCompany && <SelectedCompany company={selectedCompany} id={selectedCompany.id} />}
                 </div>
+
                 {/* Back Button (Only visible when a company is selected) */}
                 {selectedCompany && (
                     <button onClick={handleBack} className="absolute top-3 right-3 border border-blue-500/60 z-10 px-3 py-2 rounded-full transition-all delay-150 hover:bg-red-600/70 text-xs uppercase">
@@ -48,7 +50,7 @@ const Companies = () => {
                 )}
 
                 {/* List of companies (Hides smoothly but retains space) */}
-                <div className={`relative grid lg:grid-cols-4 grid-cols-1 gap-4 overflow-y-auto overflow-x-hidden w-full transition-all duration-700 ease-in-out ${selectedCompany ? "scale-y-0 origin-bottom overflow-hidden" : "opacity-100 visible scale-100"}`}>
+                <div className={`relative grid lg:grid-cols-4 grid-cols-1 gap-4 overflow-y-auto overflow-x-hidden w-full transition-all duration-500 ease-in-out ${selectedCompany ? "scale-y-0 h-[34rem] origin-bottom overflow-hidden" : "opacity-100 visible scale-100"}`}>
                     {allCompanies.map((company) => (
                         <Company company={company} key={company.id} handleClick={() => handleClick(company)} />
                     ))}

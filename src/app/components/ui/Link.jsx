@@ -12,7 +12,9 @@ const Link = (props) => {
     return (
         <a 
         className="afk-link font-semibold cursor-pointer" 
-        href={props.link}>
+        href={props.link}
+        target="_blank" 
+        rel="noopener noreferrer">
         {props.name}
         </a>
     );
