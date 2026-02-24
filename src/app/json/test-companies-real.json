@@ -1,0 +1,37 @@
+{
+    "companies":[
+        {
+            "id": 1,
+            "name": "Hibox Systems",
+            "description": [
+                {
+                "text": "Hibox Systems Oy Ab is a Finnish technology company specializing in advanced IPTV, OTT, and interactive TV solutions for business customers worldwide. Hibox enables telecom operators, hospitality providers, healthcare institutions, cruise lines, and enterprises to deliver seamless, high-quality video and digital experiences to their end users."
+                },
+                {
+                "text": "Building on this foundation, Hibox combines deep industry expertise with modern software development to create scalable, secure, and user-centric platforms. Their solutions are powered by contemporary frontend and backend technologies, enabling reliable performance, flexible integrations, and continuous innovation. With a strong focus on quality, collaboration, and real-world impact, Hibox delivers technology that truly matters for both its customers and end users."
+                }
+            ],
+            "linkname": "www.hibox.tv",
+            "linkurl": "https://www.hibox.tv/",
+            "logo": "/images/logos/hibox-white.png"
+        },
+        {
+            "id": 2,
+            "name": "Navielektro",
+            "description": [
+                {
+                "text": "Navielektro specializes in advanced real-time systems and high-performance monitoring solutions for mission-critical environments. With a strong focus on reliability, security, and technical excellence, Navielektro develops, delivers, and maintains systems designed for authority and defense use, where accuracy and availability are essential."
+                },
+                {
+                "text": "At Navielektro, innovation is driven by a constant ambition to push the boundaries of what is technically possible. By combining deep system expertise with modern software development, the company creates stable and scalable solutions that help safeguard everyday life through effective monitoring and information systems."
+                },
+                {
+                "text": "With a hands-on, customer-oriented approach and a strong engineering culture, Navielektro delivers technology that performs in demanding real-world conditions, from concept and development to long-term operation and support."
+                }
+            ],
+            "linkname": "www.navielektro.fi",
+            "linkurl": "https://www.navielektro.fi/",
+            "logo": "/images/logos/NAVILOGO02.png"
+        }
+    ]
+}

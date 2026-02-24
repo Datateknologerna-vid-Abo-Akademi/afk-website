@@ -13,7 +13,7 @@ const Participants = () => {
     return (
         <div id="participants">
             <div>
-                <h1 className="afk-section-title afk-title text-2xl">AFK 2026 Participants</h1>
+                <h1 className="afk-section-title afk-title text-white text-2xl">AFK 2026 Participants</h1>
             </div>
             <div className="mt-7">
                 <Companies />

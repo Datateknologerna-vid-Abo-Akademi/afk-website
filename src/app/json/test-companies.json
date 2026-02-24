@@ -2,143 +2,274 @@
     "companies":[
         {
             "id": 1,
-            "name": "Zoobers and Scoobers",
-            "description": "Zoobers and Scoobers is a planet wide company that focuses on zoob and scoob development",
-            "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
-            "logo": "/images/testing/zoobers_and_scoobers_logo.png"
+            "name": "Hibox Systems",
+            "description": [
+                {
+                "text": "Hibox Systems Oy Ab is a Finnish technology company specializing in advanced IPTV, OTT, and interactive TV solutions for business customers worldwide. Hibox enables telecom operators, hospitality providers, healthcare institutions, cruise lines, and enterprises to deliver seamless, high-quality video and digital experiences to their end users."
+                },
+                {
+                "text": "Building on this foundation, Hibox combines deep industry expertise with modern software development to create scalable, secure, and user-centric platforms. Their solutions are powered by contemporary frontend and backend technologies, enabling reliable performance, flexible integrations, and continuous innovation. With a strong focus on quality, collaboration, and real-world impact, Hibox delivers technology that truly matters for both its customers and end users."
+                }
+            ],
+            "linkname": "www.hibox.tv",
+            "linkurl": "https://www.hibox.tv/",
+            "logo": "/images/logos/hibox-white.png"
         },
         {
             "id": 2,
             "name": "Woopiers Glass Development",
-            "description": "Woopiers glass development is a company that focuses on glass development for the woopier market",
+            "description":[
+                {
+                "text": "Woopiers glass development is a company that focuses on glass development for the woopier market"
+                }
+            ],
             "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
             "logo": "/images/testing/woopiers_glass_logo.png"
         },
         {
             "id": 3,
             "name": "Gibblygobbly Engineering",
-            "description": "Gibblygobbly engineering is a company that focuses on gibblygobbly engineering",
+            "description":[
+                {
+                "text": "Gibblygobbly engineering is a company that focuses on gibblygobbly engineering"
+                }
+            ],
             "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
             "logo": "/images/testing/gibblygobbly_engineering_logo.png"
         },
         {
             "id": 4,
             "name": "Placeholder Company",
-            "description": "World leading company in placeholder development",
+            "description":[
+                {
+                "text": "World leading company in placeholder development"
+                }
+            ],
             "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
-            "logo": "/images/testing/placeholder_company_logo.png"
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
+            "logo": "/images/testing/zoobers_and_scoobers_logo.png"
         },
         {
             "id": 5,
             "name": "Placeholder Company 2",
-            "description": "World leading company in placeholder development",
+            "description":[
+                {
+                "text": "World leading company in placeholder development"
+                }
+            ],
             "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
-            "logo": "/images/testing/placeholder_company_logo.png"
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
+            "logo": "/images/testing/zoobers_and_scoobers_logo.png"
         },
         {
             "id": 6,
             "name": "Zoobers and Scoobers",
-            "description": "Zoobers and Scoobers is a planet wide company that focuses on zoob and scoob development",
+            "description":[
+                {
+                "text": "Zoobers and Scoobers is a planet wide company that focuses on zoob and scoob development"
+                }
+            ],
             "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
             "logo": "/images/testing/zoobers_and_scoobers_logo.png"
         },
         {
             "id": 7,
             "name": "Woopiers Glass Development",
-            "description": "Woopiers glass development is a company that focuses on glass development for the woopier market",
+            "description":[
+                {
+                "text": "Woopiers glass development is a company that focuses on glass development for the woopier market"
+                }
+            ],
             "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
             "logo": "/images/testing/woopiers_glass_logo.png"
         },
         {
             "id": 8,
             "name": "Gibblygobbly Engineering",
-            "description": "Gibblygobbly engineering is a company that focuses on gibblygobbly engineering",
+            "description":[
+                {
+                "text": "Gibblygobbly engineering is a company that focuses on gibblygobbly engineering"
+                }
+            ],
             "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
             "logo": "/images/testing/gibblygobbly_engineering_logo.png"
         },
         {
             "id": 9,
             "name": "Placeholder Company",
-            "description": "World leading company in placeholder development",
+            "description":[
+                {
+                "text": "World leading company in placeholder development"
+                }
+            ],
             "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
-            "logo": "/images/testing/placeholder_company_logo.png"
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
+            "logo": "/images/testing/zoobers_and_scoobers_logo.png"
         },
         {
             "id": 10,
             "name": "Placeholder Company 2",
-            "description": "World leading company in placeholder development",
+            "description":[
+                {
+                "text": "World leading company in placeholder development"
+                }
+            ],
             "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
-            "logo": "/images/testing/placeholder_company_logo.png"
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
+            "logo": "/images/testing/zoobers_and_scoobers_logo.png"
         },
         {
             "id": 11,
             "name": "Zoobers and Scoobers",
-            "description": "Zoobers and Scoobers is a planet wide company that focuses on zoob and scoob development",
+            "description":[
+                {
+                "text": "Zoobers and Scoobers is a planet wide company that focuses on zoob and scoob development"
+                }
+            ],
             "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
             "logo": "/images/testing/zoobers_and_scoobers_logo.png"
         },
         {
             "id": 12,
             "name": "Woopiers Glass Development",
-            "description": "Woopiers glass development is a company that focuses on glass development for the woopier market",
+            "description":[
+                {
+                "text": "Woopiers glass development is a company that focuses on glass development for the woopier market"
+                }
+            ],
             "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
             "logo": "/images/testing/woopiers_glass_logo.png"
         },
         {
             "id": 13,
             "name": "Gibblygobbly Engineering",
-            "description": "Gibblygobbly engineering is a company that focuses on gibblygobbly engineering",
+            "description":[
+                {
+                "text": "Gibblygobbly engineering is a company that focuses on gibblygobbly engineering"
+                }
+            ],
             "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
             "logo": "/images/testing/gibblygobbly_engineering_logo.png"
         },
         {
             "id": 14,
             "name": "Placeholder Company",
-            "description": "World leading company in placeholder development",
+            "description":[
+                {
+                "text": "World leading company in placeholder development"
+                }
+            ],
             "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
-            "logo": "/images/testing/placeholder_company_logo.png"
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
+            "logo": "/images/testing/zoobers_and_scoobers_logo.png"
         },
         {
             "id": 15,
             "name": "Placeholder Company 2",
-            "description": "World leading company in placeholder development",
+            "description":[
+                {
+                "text": "World leading company in placeholder development"
+                }
+            ],
             "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
-            "logo": "/images/testing/placeholder_company_logo.png"
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
+            "logo": "/images/testing/zoobers_and_scoobers_logo.png"
         },
         {
             "id": 16,
             "name": "Zoobers and Scoobers",
-            "description": "Zoobers and Scoobers is a planet wide company that focuses on zoob and scoob development",
+            "description":[
+                {
+                "text": "Zoobers and Scoobers is a planet wide company that focuses on zoob and scoob development"
+                }
+            ],
             "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
             "logo": "/images/testing/zoobers_and_scoobers_logo.png"
         },
         {
             "id": 17,
             "name": "Woopiers Glass Development",
-            "description": "Woopiers glass development is a company that focuses on glass development for the woopier market",
+            "description":[
+                {
+                "text": "Woopiers glass development is a company that focuses on glass development for the woopier market"
+                }
+            ],
             "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
             "logo": "/images/testing/woopiers_glass_logo.png"
         },
         {
             "id": 18,
             "name": "Gibblygobbly Engineering",
-            "description": "Gibblygobbly engineering is a company that focuses on gibblygobbly engineering",
+            "description":[
+                {
+                "text": "Gibblygobbly engineering is a company that focuses on gibblygobbly engineering"
+                }
+            ],
             "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
             "logo": "/images/testing/gibblygobbly_engineering_logo.png"
         },
         {
             "id": 19,
             "name": "Placeholder Company",
-            "description": "World leading company in placeholder development",
+            "description":[
+                {
+                "text": "World leading company in placeholder development"
+                }
+            ],
             "feedback": "We enjoyed AFK2024 and got a lot of recruitment oppertunities from it",
-            "logo": "/images/testing/placeholder_company_logo.png"
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
+            "logo": "/images/testing/zoobers_and_scoobers_logo.png"
         },
         {
             "id": 20,
             "name": "Placeholder Company 2",
-            "description": "Nexora Technologies is a global leader in innovative digital solutions, providing cutting-edge technology services to businesses of all sizes. Founded in 2008, the company has grown exponentially, establishing a strong presence in over 25 countries. With a dedicated team of over 5,000 professionals, Nexora is committed to transforming industries through artificial intelligence, cloud computing, cybersecurity, and enterprise software development.Nexora Technologies is a global leader in innovative digital solutions, providing cutting-edge technology services to businesses of all sizes. Founded in 2008, the company has grown exponentially, establishing a strong presence in over 25 countries. With a dedicated team of over 5,000 professionals, Nexora is committed to transforming industries through artificial intelligence, cloud computing, cybersecurity, and enterprise software development.Nexora Technologies is a global leader in innovative digital solutions, providing cutting-edge technology services to businesses of all sizes. Founded in 2008, the company has grown exponentially, establishing a strong presence in over 25 countries. With a dedicated team of over 5,000 professionals, Nexora is committed to transforming industries through artificial intelligence, cloud computing, cybersecurity, and enterprise software development.Nexora Technologies is a global leader in innovative digital solutions, providing cutting-edge technology services to businesses of all sizes. Founded in 2008, the company has grown exponentially, establishing a strong presence in over 25 countries. With a dedicated team of over 5,000 professionals, Nexora is committed to transforming industries through artificial intelligence, cloud computing, cybersecurity, and enterprise software development.",
+            "description":[
+                {
+                "text": "Nexora Technologies is a global leader in innovative digital solutions, providing cutting-edge technology services to businesses of all sizes. Founded in 2008, the company has grown exponentially, establishing a strong presence in over 25 countries. With a dedicated team of over 5,000 professionals, Nexora is committed to transforming industries through artificial intelligence, cloud computing, cybersecurity, and enterprise software development."
+                },
+                {
+                "text": "Nexora Technologies is a global leader in innovative digital solutions, providing cutting-edge technology services to businesses of all sizes. Founded in 2008, the company has grown exponentially, establishing a strong presence in over 25 countries. With a dedicated team of over 5,000 professionals, Nexora is committed to transforming industries through artificial intelligence, cloud computing, cybersecurity, and enterprise software development."
+                },
+                {
+                "text": "Nexora Technologies is a global leader in innovative digital solutions, providing cutting-edge technology services to businesses of all sizes. Founded in 2008, the company has grown exponentially, establishing a strong presence in over 25 countries. With a dedicated team of over 5,000 professionals, Nexora is committed to transforming industries through artificial intelligence, cloud computing, cybersecurity, and enterprise software development."
+                },
+                {
+                "text": "Nexora Technologies is a global leader in innovative digital solutions, providing cutting-edge technology services to businesses of all sizes. Founded in 2008, the company has grown exponentially, establishing a strong presence in over 25 countries. With a dedicated team of over 5,000 professionals, Nexora is committed to transforming industries through artificial intelligence, cloud computing, cybersecurity, and enterprise software development."
+                }
+            ],
             "feedback": "As the digital landscape continues to evolve, Nexora Technologies remains dedicated to staying at the forefront of innovation. Our roadmap includes expanding into new markets, enhancing AI-driven automation, and driving digital transformation for businesses worldwide. With a strong commitment to excellence, Nexora is poised to shape the future of technology and redefine the possibilities of digital solutions.",
-            "logo": "/images/testing/placeholder_company_logo.png"
+            "linkname": "datateknologerna.org",
+            "linkurl": "https://datateknologerna.org/",
+            "logo": "/images/testing/zoobers_and_scoobers_logo.png"
         }
     ]
 }

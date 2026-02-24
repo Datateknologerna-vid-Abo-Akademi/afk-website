@@ -34,11 +34,9 @@ const Content = () => {
                     <Organizers />
                 </div>
                 {/*Participants commented out until we get approval from the companies*/}
-                {/*
-                <div className="afk-card">
+                {/*<div className="afk-card">
                     <Participants />
-                </div> 
-                */}
+                </div>*/}
                 <div className="afk-card">
                     <Contact />
                 </div>

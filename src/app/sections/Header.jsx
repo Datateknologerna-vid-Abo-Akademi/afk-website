@@ -25,7 +25,7 @@ const Header = () => {
 
     return (
         <nav
-            className={`grid grid-cols-2 items-center justify-between fixed left-0 w-full z-20 transition-transform duration-300 border-b border-blue-500/30 bg-black/70 backdrop-blur ${hidden ? "-translate-y-full" : "translate-y-0"}`}
+            className={`flex flex-row items-center justify-between fixed left-0 w-full z-20 transition-transform duration-300 border-b border-blue-500/30 bg-black/70 backdrop-blur ${hidden ? "-translate-y-full" : "translate-y-0"}`}
             id="header"
         >
             <button
@@ -53,7 +53,7 @@ const Header = () => {
                 <ButtonHeader name="About" id="about" />
                 <ButtonHeader name="AFK26 Info" id="event-info" />
                 <ButtonHeader name="The Organizers" id="organizers" />
-                {/* <ButtonHeader name="Participants" id="participants"/> */}
+                {/*<ButtonHeader name="Participants" id="participants"/>*/}
                 <ButtonHeader name="Contact" id="contact" />
             </div>
         </nav>
