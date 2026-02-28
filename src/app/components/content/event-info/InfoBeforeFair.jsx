@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import ButtonLink from "@/app/components/ui/ButtonLink";
+import ButtonLink from "../../ui/ButtonLink";
+import ButtonScroll from "../../ui/ButtonScroll";
 
 const InfoBeforeFair = () => {
     return (
@@ -10,12 +11,12 @@ const InfoBeforeFair = () => {
             </h1>
             <p className="leading-relaxed">
                 AFK 2026 will be held on Friday 27th of November 2026. The day
-                begins with the recruitment fair itself, where all companies
-                will be able to present themselves and their work to students. During the fair students will be able to attend presentations by the companies as well as visit the company stands to learn more about them and ask questions. 
+                begins with the recruitment fair itself, where companies
+                will be able to present themselves and their work to students. During the fair students will be able to attend keynotes, presentations by the companies, as well as visit the company stands to learn more about them and ask questions. 
             </p>
             <br />
             <p className="leading-relaxed">
-                After the fair there will be a cocktail hour with drinks and snacks, where students and company representatives can mingle and network in a more informal setting. A couple hours later in the evening, there will be a more informal Sauna evening at Marlibastun, which is available to students that have attended at least two presentations during the fair as well as for company representatives that might be interestedin attending.
+                After the fair there will be a cocktail hour with drinks and snacks, where students and company representatives can mingle and network in a more informal setting. A couple hours later in the evening, there will be a more informal Sauna evening at Marlibastun, which is available to students that have attended at least two presentations during the fair, as well as for company representatives that might be interested in attending.
             </p>
             <br />
             <p className="leading-relaxed">
@@ -136,16 +137,7 @@ const InfoBeforeFair = () => {
                 We hope to see you at AFK 2026!
             </p>
             <br />
-            <button
-                className="w-full transition duration-150 ease-in-out border border-blue-500/60 rounded-full p-3 flex items-center justify-center uppercase tracking-[0.2em] hover:bg-blue-600/30"
-                onClick={() => {
-                    document
-                        .getElementById("contact")
-                        .scrollIntoView({ behavior: "smooth" });
-                }}
-            >
-                Contact Us / Attend AFK 2026!
-            </button>
+            <ButtonScroll id="contact" text="Contact Us / Attend AFK 2026!" />
         </div>
     );
 };
