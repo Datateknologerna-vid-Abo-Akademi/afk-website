@@ -1,6 +1,6 @@
 # AFK Website
 
-The official website for AFK (Arbetslivskontakt vid Åbo Akademi), a career fair organized by [DATE](https://datateknologerna.com) — the student association for IT students at Åbo Akademi University.
+The official website for AFK (Albins Företagskonferens), a career fair organized by [DaTe](https://datateknologerna.org) — the student association for IT students at Åbo Akademi University.
 
 ## Development
 
