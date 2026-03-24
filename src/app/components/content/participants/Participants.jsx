@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect } from "react";
 import Companies from "./Companies";
+import Speakers from "./Speakers";
 
 /**
  * Participants component, used to display the list of participating companies and the selected company. Contains the title and the Companies component.
@@ -15,7 +16,12 @@ const Participants = () => {
             <div>
                 <h1 className="afk-section-title afk-title text-white text-2xl">AFK 2026 Participants</h1>
             </div>
-            <div className="mt-7">
+            <h2 className="mb-2 mt-4 text-xl text-white font-semibold">Speakers</h2>
+            <div>
+                <Speakers />
+            </div>
+            <h2 className="mb-2 mt-4 text-xl text-white font-semibold">Companies</h2>
+            <div>
                 <Companies />
             </div>
         </div>

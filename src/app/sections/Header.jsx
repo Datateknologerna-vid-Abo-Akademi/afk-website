@@ -53,7 +53,7 @@ const Header = () => {
                 <ButtonHeader name="About" id="about" />
                 <ButtonHeader name="AFK26 Info" id="event-info" />
                 <ButtonHeader name="The Organizers" id="organizers" />
-                {/*<ButtonHeader name="Participants" id="participants"/>*/}
+                <ButtonHeader name="Participants" id="participants"/>
                 <ButtonHeader name="Contact" id="contact" />
             </div>
         </nav>
