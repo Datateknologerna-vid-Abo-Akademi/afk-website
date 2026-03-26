@@ -1,0 +1,68 @@
+{
+    "speakers":[
+        {
+            "id": 1,
+            "name": "Lucas Käldström",
+            "title": "Kubernetes & Cloud Native Developer",
+            "description": [
+                {
+                "text": "Lucas is a Kubernetes and cloud native contributor and expert who has been serving the CNCF community in various lead positions. He was a CNCF Ambassador for 7 years and was awarded Top CNCF Ambassador 2017 with Sarah Novotny. Lucas was a co-lead for SIG Cluster Lifecycle, WG Component Standard, co-created kubeadm, Weave Ignite, and ported Kubernetes to ARM."
+                },
+                {
+                "text": "Lucas founded and ran 3 meetups in Finland, co-created the meetup collective Cloud Native Nordics and has spoken at 10 KubeCons, including delivering a keynote with Nikhita Raghunath. Lucas wrote his BSc thesis on cloud native principles, and is now researching access control in cloud native control plane APIs, today working as a Senior Software Engineer at Upbound."
+                }
+            ],
+            "linkedin": "https://www.linkedin.com/in/luxas/",
+            "github": "https://github.com/luxas",
+            "picture": "/images/speakers/lucas.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Lucas Käldström the second",
+            "title": "Developer of testing testing",
+            "description": [
+                {
+                "text": "This speaker is a fictional test character created for development purposes. They possess an uncanny ability to debug code using only interpretive dance and have mastered the art of fixing production issues by talking to rubber ducks. When not breaking things intentionally for testing, they enjoy long walks through nested JSON structures."
+                },
+                {
+                "text": "Despite their playful nature, Lucas the second is a highly skilled developer with a knack for finding edge cases and ensuring robust software. They are known for their creative problem-solving skills and their ability to turn even the most mundane bug fixes into an entertaining spectacle. In their free time, they run a popular blog where they share humorous anecdotes about their adventures in software development."
+                }
+            ],
+            "linkedin": "https://www.linkedin.com/in/luxas/",
+            "github": "https://github.com/luxas",
+            "picture": "/images/speakers/lucas.jpeg"
+        },
+        {
+            "id": 3,
+            "name": "Lucas Käldström the third",
+            "title": "Developer of testing testing",
+            "description": [
+                {
+                "text": "This speaker is a fictional test character created for development purposes. They possess an uncanny ability to debug code using only interpretive dance and have mastered the art of fixing production issues by talking to rubber ducks. When not breaking things intentionally for testing, they enjoy long walks through nested JSON structures."
+                },
+                {
+                "text": "Despite their playful nature, Lucas the third is a highly skilled developer with a knack for finding edge cases and ensuring robust software. They are known for their creative problem-solving skills and their ability to turn even the most mundane bug fixes into an entertaining spectacle. In their free time, they run a popular blog where they share humorous anecdotes about their adventures in software development."
+                }
+            ],
+            "linkedin": "https://www.linkedin.com/in/luxas/",
+            "github": "https://github.com/luxas",
+            "picture": "/images/speakers/lucas.jpeg"
+        },
+        {
+            "id": 4,
+            "name": "Lucas Käldström the fourth",
+            "title": "Developer of testing testing",
+            "description": [
+                {
+                "text": "This speaker is a fictional test character created for development purposes. They possess an uncanny ability to debug code using only interpretive dance and have mastered the art of fixing production issues by talking to rubber ducks. When not breaking things intentionally for testing, they enjoy long walks through nested JSON structures."
+                },
+                {
+                "text": "Despite their playful nature, Lucas the fourth is a highly skilled developer with a knack for finding edge cases and ensuring robust software. They are known for their creative problem-solving skills and their ability to turn even the most mundane bug fixes into an entertaining spectacle. In their free time, they run a popular blog where they share humorous anecdotes about their adventures in software development."
+                }
+            ],
+            "linkedin": "https://www.linkedin.com/in/luxas/",
+            "github": "https://github.com/luxas",
+            "picture": "/images/speakers/lucas.jpeg"
+        }
+    ]
+}

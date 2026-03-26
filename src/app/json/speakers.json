@@ -2,18 +2,19 @@
     "speakers":[
         {
             "id": 1,
-            "name": "Lukas Käldström",
+            "name": "Lucas Käldström",
+            "title": "Kubernetes & Cloud Native Developer",
             "description": [
                 {
-                "text": "Hibox Systems Oy Ab is a Finnish technology company specializing in advanced IPTV, OTT, and interactive TV solutions for business customers worldwide. Hibox enables telecom operators, hospitality providers, healthcare institutions, cruise lines, and enterprises to deliver seamless, high-quality video and digital experiences to their end users."
+                "text": "Lucas is a Kubernetes and cloud native contributor and expert who has been serving the CNCF community in various lead positions. He was a CNCF Ambassador for 7 years and was awarded Top CNCF Ambassador 2017 with Sarah Novotny. Lucas was a co-lead for SIG Cluster Lifecycle, WG Component Standard, co-created kubeadm, Weave Ignite, and ported Kubernetes to ARM."
                 },
                 {
-                "text": "Building on this foundation, Hibox combines deep industry expertise with modern software development to create scalable, secure, and user-centric platforms. Their solutions are powered by contemporary frontend and backend technologies, enabling reliable performance, flexible integrations, and continuous innovation. With a strong focus on quality, collaboration, and real-world impact, Hibox delivers technology that truly matters for both its customers and end users."
+                "text": "Lucas founded and ran 3 meetups in Finland, co-created the meetup collective Cloud Native Nordics and has spoken at 10 KubeCons, including delivering a keynote with Nikhita Raghunath. Lucas wrote his BSc thesis on cloud native principles, and is now researching access control in cloud native control plane APIs, today working as a Senior Software Engineer at Upbound."
                 }
             ],
-            "linkname": "LinkedIn",
-            "linkurl": "https://www.linkedin.com/in/luxas/",
-            "picture": "/images/speakers/lukas.jpeg"
+            "linkedin": "https://www.linkedin.com/in/luxas/",
+            "github": "https://github.com/luxas",
+            "picture": "/images/speakers/lucas.jpeg"
         }
     ]
 }

@@ -16,7 +16,8 @@ const Participants = () => {
             <div>
                 <h1 className="afk-section-title afk-title text-white text-2xl">AFK 2026 Participants</h1>
             </div>
-            <h2 className="mb-2 mt-4 text-xl text-white font-semibold">Speakers</h2>
+            <p className="leading-relaxed">Below you can find the participating companies as well as our keynote speaker for this year, Lucas Käldström. Additional information about each participant can be found by clicking on their respective cards.</p>
+            <h2 className="my-4 text-xl text-white font-semibold">Speakers</h2>
             <div>
                 <Speakers />
             </div>

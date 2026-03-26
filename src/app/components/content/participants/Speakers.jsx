@@ -35,7 +35,7 @@ const Speakers = () => {
     return (
         <div className="relative w-full flex flex-col">
             {/* Maintain height with a wrapping div */}
-            <div className={`grid grid-rows-[auto,1fr] w-full max-h-[37rem] ${selectedSpeaker ? "h-[34rem]" : ""}`}>
+            <div className={`grid grid-rows-[auto,1fr] w-full ${selectedSpeaker ? "h-[34rem]" : ""}`}>
                 
                 {/* Selected speaker div (Initially hidden but takes space) */}
                 <div className={`absolute afk-card top-0 left-0 right-0 bottom-0 w-full overflow-auto ${selectedSpeaker ? "transition-all duration-500 ease-in-out" : "transition-none"} ${selectedSpeakerHidden ? "scale-y-100 origin-top" : "scale-y-0 origin-top"}`}>
@@ -50,7 +50,7 @@ const Speakers = () => {
                 )}
 
                 {/* List of speakers (Hides smoothly but retains space) */}
-                <div className={`relative grid lg:grid-cols-4 grid-cols-1 gap-4 overflow-y-auto overflow-x-hidden w-full transition-all duration-500 ease-in-out ${selectedSpeaker ? "scale-y-0 h-[34rem] origin-bottom overflow-hidden" : "opacity-100 visible scale-100"}`}>
+                <div className={`relative grid lg:grid-cols-2 grid-cols-1 gap-4 w-full transition-all duration-500 ease-in-out ${selectedSpeaker ? "scale-y-0 h-[34rem] origin-bottom overflow-hidden" : "opacity-100 visible scale-100"}`}>
                     {allSpeakers.map((speaker) => (
                         <Speaker speaker={speaker} key={speaker.id} handleClick={() => handleClick(speaker)} />
                     ))}
