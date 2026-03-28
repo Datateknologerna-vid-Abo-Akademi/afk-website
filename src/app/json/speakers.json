@@ -1,0 +1,20 @@
+{
+    "speakers":[
+        {
+            "id": 1,
+            "name": "Lucas Käldström",
+            "title": "Kubernetes & Cloud Native Developer",
+            "description": [
+                {
+                "text": "Lucas is a Kubernetes and cloud native contributor and expert who has been serving the CNCF community in various lead positions. He was a CNCF Ambassador for 7 years and was awarded Top CNCF Ambassador 2017 with Sarah Novotny. Lucas was a co-lead for SIG Cluster Lifecycle, WG Component Standard, co-created kubeadm, Weave Ignite, and ported Kubernetes to ARM."
+                },
+                {
+                "text": "Lucas founded and ran 3 meetups in Finland, co-created the meetup collective Cloud Native Nordics and has spoken at 10 KubeCons, including delivering a keynote with Nikhita Raghunath. Lucas wrote his BSc thesis on cloud native principles, and is now researching access control in cloud native control plane APIs, today working as a Senior Software Engineer at Upbound."
+                }
+            ],
+            "linkedin": "https://www.linkedin.com/in/luxas/",
+            "github": "https://github.com/luxas",
+            "picture": "/images/speakers/lucas.jpeg"
+        }
+    ]
+}

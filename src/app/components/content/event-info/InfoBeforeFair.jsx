@@ -10,9 +10,8 @@ const InfoBeforeFair = () => {
                 AFK 2026 Information
             </h1>
             <p className="leading-relaxed">
-                AFK 2026 will be held on Friday 27th of November 2026. The day
-                begins with the recruitment fair itself, where companies
-                will be able to present themselves and their work to students. During the fair students will be able to attend keynotes, presentations by the companies, as well as visit the company stands to learn more about them and ask questions. 
+                AFK 2026 will be held on Friday 27th of November 2026. The day begins with the recruitment fair itself, where companies
+                will be able to present themselves and their work to students as well as attend keynotes by our speakers. During the fair students will be able to attend presentations by the companies and visit the company stands to learn more about them and ask questions. 
             </p>
             <br />
             <p className="leading-relaxed">
@@ -26,6 +25,9 @@ const InfoBeforeFair = () => {
                 only IT students, but also students from other disciplines
                 within the faculty.
             </p>
+            <br />
+            <ButtonScroll id="participants" text="See the participating companies and speakers here!"
+            />
             <br />
             <h2 className="mb-2 text-xl text-white font-semibold">
                 Pricing for the year 2026 will be as follows:
