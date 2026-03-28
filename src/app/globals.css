@@ -38,7 +38,6 @@ body {
   background-color: var(--afk-ink);
   overflow-x: hidden;
 }
-/* Binary pattern. Removed for now.
 .afk-site::before {
   content: "";
   position: fixed;
@@ -48,7 +47,6 @@ body {
   z-index: 0;
   pointer-events: none;
 }
-*/
 
 .afk-site::after {
   content: "";
