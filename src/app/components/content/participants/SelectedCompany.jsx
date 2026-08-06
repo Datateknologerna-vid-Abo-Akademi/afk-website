@@ -20,13 +20,18 @@ const Company = (props) => {
             id="company"
             onClick={() => props.handleClick(props.company)}
         >
-            <Image
-                src={props.company.logo}
-                alt={props.company.name + " logo"}
-                height={100}
-                width={200}
-                className="object-contain"
-            />
+            <div className="flex flex-col">
+                <div className="flex h-40">
+                    <Image
+                        src={props.company.logo}
+                        alt={props.company.name + " logo"}
+                        height={100}
+                        width={200}
+                        className="object-contain"
+                    />
+                </div>
+                <p className="text-gray-400 text-center mt-2">Click to Read More</p>
+            </div>
         </div>
     );
 };
