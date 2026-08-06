@@ -36,7 +36,7 @@ const InfoBeforeFair = () => {
                 <li className="font-semibold text-lg italic">
                     Stand at the fair
                     <span className="font-semibold text-blue-500"> - </span>
-                    700 EUR
+                    400 EUR
                 </li>
                 <ul className="list-disc list-inside">
                     <li className="mb-3 ml-5 list-['- ']">
@@ -47,7 +47,7 @@ const InfoBeforeFair = () => {
                 <li className="font-semibold text-lg italic">
                     Company presentation{" "}
                     <span className="font-semibold text-blue-500"> - </span> 
-                    500 EUR
+                    300 EUR
                 </li>
                 <ul className="list-disc list-inside">
                     <li className="mb-3 ml-5 list-['- ']">
