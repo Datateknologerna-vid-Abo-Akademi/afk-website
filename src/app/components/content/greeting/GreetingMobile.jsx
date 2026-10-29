@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 // Render Countdown client-side only to prevent hydration issues
 const Countdown = dynamic(() => import("@/app/components/ui/Countdown"), { ssr: false });
 
-const eventDate = new Date("2026-11-27T11:00:00");
+const eventDate = new Date("2026-11-17T12:00:00");
 
 const GreetingMobile = () => {
     return (
@@ -21,21 +21,9 @@ const GreetingMobile = () => {
                 <div className="flex flex-col items-center gap-4">
                     <h1 className="afk-title text-5xl">AFK 2026</h1>
                     <p className="text-xl font-extrabold max-w-xl">
-                        November 27th, 2026 @ Aurum, Turku
+                        November 17th, 2026 @ Logomo, Turku
                     </p>
-                    <Countdown targetDate={eventDate} /> 
-                    <div className="flex items-center">
-                        <button
-                            className="afk-pill text-lg bg-blue-900/80 mt-3 transition-colors duration-300"
-                            onClick={() => {
-                                document
-                                    .getElementById("contact")
-                                    .scrollIntoView({ behavior: "smooth" });
-                            }}
-                        >
-                            Attend AFK
-                        </button>
-                    </div>
+                    <Countdown targetDate={eventDate} />
                 </div>
             </div>
         </section>
