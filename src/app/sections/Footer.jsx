@@ -28,7 +28,7 @@ const Footer = () => {
                     <p>
                         Address: <br />
                         Åbo Akademi <br />
-                        Agora, Vattenborgsvägen 5 <br />
+                        Arken, Fabriksgatan 2 <br />
                         20500 Åbo
                     </p>
                 </div>

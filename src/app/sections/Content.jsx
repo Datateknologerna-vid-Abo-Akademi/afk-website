@@ -24,22 +24,24 @@ const Content = () => {
                 <div className="afk-card">
                     <About />
                 </div>
+                {/*
                 <div className="afk-card">
                     {/*Change around Prices and Fair depending on the time until the event.
-                    When it is around 1-2 months until the event then showcase the fair, otherwise show the prices*/}
+                    When it is around 1-2 months until the event then showcase the fair, otherwise show the prices
                     <InfoBeforeFair />
-                    {/*<InfoFair />*/}
+                    {/*<InfoFair />
                 </div>
                 <div className="afk-card">
                     <Organizers />
                 </div>
-                {/*Participants commented out until we get approval from the companies*/}
+                {/*Participants commented out until we get approval from the companies
                 <div className="afk-card">
                     <Participants />
                 </div>
                 <div className="afk-card">
                     <Contact />
                 </div>
+                 */}
             </div>
         </div>
     );

@@ -50,11 +50,13 @@ const Header = () => {
             */}
             <div className="mr-6 flex text-base justify-end items-center gap-3 p-3 tracking-[0.12em] uppercase">
                 {/*Temporary links/sections, could be changed to different pages with images or companies etc.*/}
+                {/* 
                 <ButtonHeader name="About" id="about" />
                 <ButtonHeader name="AFK26 Info" id="event-info" />
                 <ButtonHeader name="The Organizers" id="organizers" />
                 <ButtonHeader name="Participants" id="participants"/>
                 <ButtonHeader name="Contact" id="contact" />
+                */}
             </div>
         </nav>
     );
